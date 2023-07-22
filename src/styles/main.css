@@ -1,0 +1,168 @@
+.nav .nav__bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3rem;
+  background-color: #2d2e38;
+  z-index: 10000;
+  transition: 0.4s ease-in-out;
+  overflow: hidden;
+}
+@media only screen and (orientation: portrait) and (min-width: 768px) {
+  .nav .nav__bar {
+    height: 0;
+  }
+}
+@media only screen and (orientation: landscape) and (min-width: 768px) {
+  .nav .nav__bar {
+    height: 0;
+  }
+}
+.nav .nav__bar .nav__toggle {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: row;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3rem;
+  padding: 0 20px;
+  color: #c5c6c7;
+  cursor: pointer;
+  border-bottom: 4px solid #66fcf1;
+}
+.nav .nav__bar .nav__toggle::before {
+  content: "Menu";
+  padding: 0 10px;
+}
+.nav .nav__bar .nav__toggle .nav__span {
+  position: relative;
+  width: 20px;
+  height: 3rem;
+}
+.nav .nav__bar .nav__toggle .nav__span::before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: 0;
+  width: 20px;
+  height: 2px;
+  background-color: #fff;
+  transition: 0.4s ease-in-out;
+}
+.nav .nav__bar .nav__toggle .nav__span::after {
+  content: "";
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  width: 20px;
+  height: 2px;
+  background-color: #fff;
+  transition: 0.4s ease-in-out;
+}
+.nav .nav__bar .nav__toggle--active::before {
+  content: "Ukryj";
+}
+.nav .nav__bar .nav__toggle--active .nav__span::before {
+  transform: rotate(225deg);
+  top: 24px;
+}
+.nav .nav__bar .nav__toggle--active .nav__span::after {
+  transform: rotate(135deg);
+  bottom: 22px;
+}
+.nav .nav__bar .nav__list {
+  position: relative;
+  background-color: #2d2e38;
+}
+@media only screen and (orientation: portrait) and (min-width: 768px) {
+  .nav .nav__bar .nav__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding-top: 5px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-bottom: 3px solid #66fcf1;
+  }
+}
+@media only screen and (orientation: landscape) and (min-width: 768px) {
+  .nav .nav__bar .nav__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding-top: 5px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-bottom: 3px solid #66fcf1;
+  }
+}
+.nav .nav__bar .nav__list .nav__item {
+  list-style-type: none;
+  color: #c5c6c7;
+  cursor: pointer;
+}
+.nav .nav__bar .nav__list .nav__item .nav__link {
+  position: relative;
+  text-decoration: none;
+  display: block;
+  padding: 10px 20px;
+  height: 3rem;
+  color: #c5c6c7;
+  font-size: 1em;
+  transition: 0.4s ease-in-out;
+}
+@media only screen and (orientation: portrait) and (min-width: 768px) {
+  .nav .nav__bar .nav__list .nav__item .nav__link {
+    text-transform: uppercase;
+  }
+}
+@media only screen and (orientation: landscape) and (min-width: 768px) {
+  .nav .nav__bar .nav__list .nav__item .nav__link {
+    text-transform: uppercase;
+  }
+}
+.nav .nav__bar .nav__list .nav__item .nav__link:hover {
+  color: #66fcf1;
+}
+.nav .nav__bar .nav__list .nav__item .nav__link:focus {
+  transition: 0s;
+  color: #66fcf1;
+}
+.nav .nav__bar .nav__list .nav__item .nav__link--color {
+  color: #66fcf1;
+  transition: 0.4s ease-in-out;
+}
+.nav .nav__bar--active {
+  height: 280px;
+}
+.nav .nav__bar--sticky-big-screen {
+  height: 3rem;
+}
+@media only screen and (orientation: portrait) and (min-width: 768px) {
+  .nav .nav__bar--sticky-big-screen {
+    height: 3.5rem;
+  }
+}
+@media only screen and (orientation: landscape) and (min-width: 768px) {
+  .nav .nav__bar--sticky-big-screen {
+    height: 3.5rem;
+  }
+}
+
+.nav--active {
+  display: none;
+}/*# sourceMappingURL=main.css.map */
