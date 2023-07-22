@@ -2,9 +2,9 @@
   "name": "dd-psychology",
   "version": "1.0.0",
   "description": "DD psychology - gabinet psychologiczny Dominiki Jazowskiej i Dominiki Wąchadło",
-  "default": "./src/index.ts",
+  "default": "src/index.ts",
   "source": [
-    "./src/index.html"
+    "src/index.html"
   ],
   "scripts": {
     "start": "parcel",
