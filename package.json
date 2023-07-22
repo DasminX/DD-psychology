@@ -1,0 +1,35 @@
+{
+  "name": "dd-psychology",
+  "version": "1.0.0",
+  "description": "DD psychology - gabinet psychologiczny Dominiki Jazowskiej i Dominiki Wąchadło",
+  "default": "src/index.ts",
+  "source": [
+    "src/index.html"
+  ],
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "keywords": [
+    "gabinet",
+    "psychologiczny",
+    "gabet",
+    "psycholog",
+    "pomoc",
+    "dzieci",
+    "młodzież",
+    "dorośli",
+    "wsparcie",
+    "fachowa",
+    "pomoc",
+    "innowacyjne",
+    "kreatywne"
+  ],
+  "author": "DasminX",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.9.3",
+    "parcel": "^2.9.3",
+    "typescript": "^5.1.6"
+  }
+}
