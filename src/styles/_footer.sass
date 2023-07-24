@@ -1,0 +1,66 @@
+.footer
+    @include flex(center, center, column)
+    position: relative
+    background-color: #2d2e38
+    border-top: 1px solid $bright-color
+    scroll-behavior: auto
+    .footer__go-up
+        @include flex(center, center, row)
+        position: absolute
+        top: 0
+        left: 50%
+        transform: translate(-50%, -50%)
+        background-color: $bright-color
+        min-width: 40px 
+        min-height: 50px
+        scroll-behavior: auto
+        transition: 0.4s ease-in-out
+        overflow: hidden
+        cursor: pointer
+        &:hover
+            background-color: #44dad0
+        &:hover .footer__go-up-icon
+            transform: translateY(-10px)
+        .footer__go-up-icon
+            transition: 0.2s ease-in-out
+            color: $white-color
+            font-size: 28px
+
+    .footer__list
+        @include flex(space-around, flex-end, row)
+        width: 50%
+        min-height: 8em
+        @include mq(tablet)
+            width: 50%
+        @include mq-land(tablet)
+            width: 50%
+        @include mq-land(desktop-wide)
+            width: 30%
+        .footer__social
+            position: relative
+            clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%, 50% 0)
+            width: 3.5em
+            height: 3.5em
+            background-color: red
+            z-index: 4
+            @include mq-land(desktop)
+                width: 4.5em
+                height: 4.5em
+            &:hover .footer__icon
+                font-size: 32px
+                color: $bright-color
+            
+            .footer__icon
+                @include position-center
+                transition: 0.2s ease-in-out
+                font-size: 24px
+                color: $white-color
+    .footer__copy
+        @include flex(center, center, row)
+        width: 100%
+        height: 5em
+        .footer__text
+            text-align: center
+            padding: 0 20px
+            font-family: $family-raleway
+            color: $bright-color

@@ -7,6 +7,8 @@
       title="DD Psychology"
       content="DD Psychology to profesjonalny gabinet psychologiczny, w którym przyjmują fantastyczne laseczki, które kocham i pozdrawiam!!!!!."
     />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -18,31 +20,62 @@
       rel="stylesheet"
     />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <link rel="stylesheet" href="src/main.sass" />
     <link rel="stylesheet" href="styles.scss" />
     <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script defer type="module" src="index.ts"></script>
+    <script defer src="navToogle.js"> </script>
     <title>DD psychology</title>
   </head>
   <body>
-    <nav class="navigation" id="navigation">
-      <div id="logo" class="navigation__logo">img</div>
-      <ul class="navigation__list">
-        <li class="navigation__list--item"><a href="#"></a>O nas</li>
-        <li class="navigation__list--item"><a href="#"></a>Dla kogo</li>
-        <li class="navigation__list--item"><a href="#"></a>Opinie</li>
-        <li class="navigation__list--item">
-          <a href="#"></a>Gdzie nas znajdziesz
-        </li>
-      </ul>
-    </nav>
-    <div id="mainContainer" class="mainContainer">
+    <nav class="nav">
+      <div class="nav__bar">
+          <div class="nav__toggle">
+              <span class="nav__span"> </span>
+          </div>
+          <ul class="nav__list">
+              <li class="nav__item"><a id="home" class="nav__link nav__link--color" >Strona Główna</a></li>
+              <li class="nav__item"><a id="about" class="nav__link" >O nas</a></li>
+              <li class="nav__item"><a id="forWhom" class="nav__link" >Dla kogo</a></li>
+              <li class="nav__item"><a id="opinions" class="nav__link" >Opinie</a></li>
+              <li class="nav__item"><a id="contact" class="nav__link" >Kontakt</a></li>
+          </ul>
+      </div>
+  </nav>
+    <main id="mainContainer" class="mainContainer">
       <header>logo i motto</header>
-      <section>o nas (zdjecia i imie nazwisko krzywe, opis obok/pod)</section>
-      <section>dla kogo jestesmy</section>
-      <section>opinie</section>
-      <section>gdzie nas znajdziesz + kontakt</section>
-      <footer>stopka</footer>
-    </div>
+      <section id="about">o nas (zdjecia i imie nazwisko krzywe, opis obok/pod)</section>
+      <section id="forWhom">dla kogo jestesmy</section>
+      <section id="opinions">opinie</section>
+      <section id="contact" class="contact">
+        <div class="contact__header">
+            <h2 class="contact__h2">Kontakt</h2>
+        </div>
+        <div class="contact__wrap">
+            <form class="contact__form" >     
+                <h2 class="contact__form-header">Jeżeli masz jakieś pytania, napisz do nas</h2>
+                <input class="contact__input"  name ="Imię" type="text" placeholder="Imię" onfocus="this.placeholder=''" onblur="this.placeholder='Imię' " required>
+                <input type="hidden" name="_subject" value="Masz nową wiadomość!">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="thank-note.html">
+                <input class="contact__input" name ="Email" type="email" placeholder="Mail" onfocus="this.placeholder=''" onblur="this.placeholder='Mail'" required >
+                <textarea class="contact__text" name ="Wiadomość" id="message" type="message"  placeholder="Wiadomość" onfocus= "this.placeholder=''" onblur="this.placeholder='Wiadomość'" required></textarea>
+                <button type="submit"  class="contact__submit"> Wyślij wiadomość</button>
+            </form>
+        </div>
+    </section>
+
+
+
+    <footer class="footer">
+        <div class="footer__go-up"><i class="fas fa-angle-up footer__go-up-icon"></i></div>
+        <ul class="footer__list">
+            <li class="footer__social"><a class="footer__link" target="_blank" href="https://www.facebook.com/"><i class="fab fa-facebook footer__icon"></i></a></li>
+            <li class="footer__social"><a class="footer__link" target="_blank" href="https://www.instagram.com/"><i class="fab fa-instagram footer__icon"></i></a></li>
+            </ul>
+        <div class="footer__copy"><p class="footer__text">Bezpieczna Przystań - Wszystkie prawa zastrzeżone &copy; 2021</p></div>
+
+    </footer>
+
+    </main>
   </body>
 </html>
