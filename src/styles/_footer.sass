@@ -8,11 +8,11 @@
         @include flex(center, center, row)
         position: absolute
         top: 0
-        left: 50%
+        left: 90%
         transform: translate(-50%, -50%)
         background-color: $bright-color
-        min-width: 40px 
-        min-height: 50px
+        min-width: 30px 
+        min-height: 40px
         scroll-behavior: auto
         transition: 0.4s ease-in-out
         overflow: hidden
@@ -23,7 +23,7 @@
             transform: translateY(-10px)
         .footer__go-up-icon
             transition: 0.2s ease-in-out
-            color: $white-color
+            color: #000
             font-size: 28px
 
     .footer__list
@@ -49,7 +49,6 @@
             &:hover .footer__icon
                 font-size: 32px
                 color: $bright-color
-            
             .footer__icon
                 @include position-center
                 transition: 0.2s ease-in-out
