@@ -1,6 +1,14 @@
+// all
 @import "styles/_globals.scss";
 @import "styles/_mediaQueries";
 @import "styles/_mixins";
+@import "styles/_nav.sass";
+
+// /index.html
 @import "styles/_header";
-@import "styles/_aboutus";
 @import "styles/_aboutDDP";
+@import "styles/_contact";
+@import "styles/_footer";
+
+// about-us/index.html
+@import "styles/_aboutus";
