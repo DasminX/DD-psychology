@@ -7,8 +7,8 @@
     "src/index.html"
   ],
   "scripts": {
-    "start": "parcel",
-    "build": "parcel build"
+    "start": "parcel src/index.html src/about-us/index.html",
+    "build": "parcel build src/**/*.html src/styles.scss src/index.ts"
   },
   "keywords": [
     "gabinet",
