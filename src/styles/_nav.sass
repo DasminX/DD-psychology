@@ -23,7 +23,7 @@
             padding: 0 20px
             color: $font-color
             cursor: pointer
-            border-bottom: 4px solid $bright-color
+            border-bottom: 4px solid $white
             
             &::before
                 content: "Menu"
@@ -40,7 +40,7 @@
                     left: 0
                     width: 20px
                     height: 2px
-                    background-color: $white-color
+                    background-color: $white
                     transition: 0.4s ease-in-out
                 &::after
                     content: ''
@@ -49,7 +49,7 @@
                     left: 0
                     width: 20px
                     height: 2px
-                    background-color: $white-color
+                    background-color: $white
                     transition: 0.4s ease-in-out
         .nav__toggle--active
             &::before
@@ -73,7 +73,7 @@
                 top: 50% 
                 left: 50%
                 transform: translate(-50%, -50%)
-                border-bottom: 3px solid $bright-color
+                border-bottom: 3px solid $white
             @include mq-land(tablet)
                 @include flex(center, center, row)
                 padding-top: 5px
@@ -83,7 +83,7 @@
                 top: 50% 
                 left: 50%
                 transform: translate(-50%, -50%)
-                border-bottom: 3px solid $bright-color
+                border-bottom: 3px solid $white
             .nav__item
                 list-style-type: none
                 color: $font-color
@@ -103,12 +103,12 @@
                     @include mq-land(tablet)
                         text-transform: uppercase
                     &:hover
-                        color: $bright-color
+                        color: $white
                     &:focus
                         transition: 0s
-                        color: $bright-color
+                        color: $white
                 .nav__link--color
-                    color: $bright-color
+                    color: $white
                     transition: 0.4s ease-in-out
 
     .nav__bar--active

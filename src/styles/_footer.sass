@@ -2,7 +2,7 @@
     @include flex(center, center, column)
     position: relative
     background-color: #2d2e38
-    border-top: 1px solid $bright-color
+    border-top: 1px solid $white
     scroll-behavior: auto
     .footer__go-up
         @include flex(center, center, row)
@@ -10,7 +10,7 @@
         top: 0
         left: 90%
         transform: translate(-50%, -50%)
-        background-color: $bright-color
+        background-color: $white
         min-width: 30px 
         min-height: 40px
         scroll-behavior: auto
@@ -48,12 +48,12 @@
                 height: 4.5em
             &:hover .footer__icon
                 font-size: 32px
-                color: $bright-color
+                color: $white
             .footer__icon
                 @include position-center
                 transition: 0.2s ease-in-out
                 font-size: 24px
-                color: $white-color
+                color: $white
     .footer__copy
         @include flex(center, center, row)
         width: 100%
@@ -62,4 +62,4 @@
             text-align: center
             padding: 0 20px
             font-family: $family-raleway
-            color: $bright-color
+            color: $white
