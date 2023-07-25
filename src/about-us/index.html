@@ -17,19 +17,41 @@
     />
     <meta property="og:site_name" content="Bezpieczna Przystań" />
     <meta property="og:type" content="website" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link
       href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,300;1,400;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <link rel="stylesheet" href="../styles.scss" />
     <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script defer src="../navToogle.js"></script>
     <script defer type="module" src="../index.ts"></script>
+    <link rel="stylesheet" href="../styles.scss" />
     <title>DD psychology</title>
   </head>
   <body>
+    <nav class="nav">
+      <div class="nav__bar">
+        <div class="nav__toggle">
+          <span class="nav__span"> </span>
+        </div>
+        <ul class="nav__list">
+          <li class="nav__item"><a href="/" id="home" class="nav__link nav__link--color">Strona Główna</a></li>
+          <li class="nav__item"><a href="/about-us" id="about" class="nav__link">O nas</a></li>
+          <li class="nav__item"><a href="#" id="forWhom" class="nav__link">Dla kogo</a></li>
+          <li class="nav__item"><a href="#" id="opinions" class="nav__link">Opinie</a></li>
+          <li class="nav__item"><a href="#" id="contact" class="nav__link">Kontakt</a></li>
+        </ul>
+      </div>
+    </nav>
+
     <div id="mainContainer" class="mainContainer">
       <section id="aboutus" class="aboutus">
         <h1 data-aos-duration="550" data-aos="fade-up">Kim jesteśmy?</h1>
@@ -91,5 +113,12 @@
         </div>
       </section>
     </div>
+
+    <footer class="footer">
+      <div class="footer__go-up"><i class="fas fa-angle-up footer__go-up-icon"></i></div>
+      <div class="footer__copy">
+        <p class="footer__text">Bezpieczna Przystań - Wszystkie prawa zastrzeżone &copy; 2021</p>
+      </div>
+    </footer>
   </body>
 </html>
