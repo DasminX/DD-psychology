@@ -13,6 +13,7 @@ $white: #fbfbfb;
 $font-cytat: "Dancing Script", cursive;
 $font-roboto: "Roboto Condensed", sans-serif;
 $font-titillium: "Titillium Web", sans-serif;
+$font-bebas: "Bebas Neue", sans-serif;
 
 $nav-color: #2d2e38;
 $font-bgc: #616161;
@@ -67,6 +68,15 @@ body {
 section,
 header {
   margin: 1rem 0;
+}
+
+blockquote p {
+  font-size: 110%;
+  font-family: $font-bebas;
+
+  &:last-child {
+    text-align: right;
+  }
 }
 
 h1,
