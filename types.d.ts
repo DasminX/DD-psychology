@@ -1,1 +1,2 @@
-declare const AOS
+declare const AOS;
+declare const Swiper;

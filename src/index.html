@@ -19,10 +19,12 @@
     <meta property="og:type" content="website" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@400;500;600;700&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
-
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <script defer src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script defer src="navToogle.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>    <script defer src="navToogle.js"></script>
     <script defer type="module" src="index.ts"></script>
     <link rel="stylesheet" href="styles.scss" />
     <title>DD psychology</title>
@@ -96,10 +98,51 @@
 
       <section id="about">o nas (zdjecia i imie nazwisko krzywe, opis obok/pod)</section>
       <section id="forWhom">dla kogo jestesmy</section>
-      <section id="opinions">opinie</section>
+
+      <section id="opinions" class="opinions">
+        <h1>Opinie</h1>
+        <div class="opinions__wrapper swiper">
+          <div class="opinions__wrapper__inner swiper-wrapper">
+            <div class="opinions__wrapper__inner--el swiper-slide">
+              <h3>Jan Kowalski</h3>
+              <p>Dziewczyny są super! Wyleczyły mojego pimpka z obgryzania ogona!!11! polecam!!!!!@@</p>
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+            <div class="opinions__wrapper__inner--el swiper-slide">
+              <h3>Marta Harda</h3>
+              <p>Przed przyjściem do Pań byłam bardzo słaba psychicznie... natomiast 3 wizyty u PROFESJONALISTEK sprawiły, że teraz jestem harda!!! Nawet zmieniłam nazwisko :)</p>
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+            <div class="opinions__wrapper__inner--el swiper-slide">
+              <h3>Johnny Mielony</h3>
+              <p>Jakiś długi opis zeby sprawdzic czy  bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla</p>
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section>
 
       <section class="contact" id="contact">
-        <h2 class='contact__header'>Skontaktuj się z nami !</h2>
+        <h1 class='contact__header'>Skontaktuj się z nami !</h1>
         <div class="contact__infos">
           <div class="contact__square">
             <i class="fa-solid fa-mobile contact__icon"></i>

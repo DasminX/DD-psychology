@@ -32,5 +32,8 @@
     "@rbf/parcel-optimizer-javascript-obfuscator": "^0.2.2",
     "parcel": "^2.9.3",
     "typescript": "^5.1.6"
+  },
+  "dependencies": {
+    "swiper": "^10.0.4"
   }
 }

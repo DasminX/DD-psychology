@@ -1,0 +1,39 @@
+.opinions {
+  &__wrapper {
+    width: 70%;
+    background-color: $white;
+    border-radius: 1rem;
+    padding: 1rem;
+
+    &__inner {
+      &--el {
+        display: flex;
+        flex-direction: column;
+        /*         max-height: 16rem;
+        overflow-y: auto; */
+        // todo
+
+        h3 {
+          font-weight: 700;
+          color: $graphite;
+        }
+
+        p {
+          color: $graphite;
+        }
+
+        .stars {
+          display: flex;
+          width: 30%;
+          align-items: center;
+          justify-content: space-evenly;
+          margin: auto auto 0 auto;
+
+          & * {
+            color: gold;
+          }
+        }
+      }
+    }
+  }
+}

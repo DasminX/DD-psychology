@@ -45,6 +45,7 @@ body {
   color: $white;
   font-family: $font-roboto;
   line-height: 170%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -77,6 +78,15 @@ blockquote p {
   &:last-child {
     text-align: right;
   }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: uppercase;
 }
 
 h1,
