@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="pl">
   <head>
+    <!-- META -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
@@ -17,33 +18,36 @@
     />
     <meta property="og:site_name" content="Bezpieczna Przystań" />
     <meta property="og:type" content="website" />
+
+    <!-- LINK -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@400;500;600;700&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="styles.scss" />
+
+    <!-- SCRIPT -->
     <script defer src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>    <script defer src="navToogle.js"></script>
     <script defer type="module" src="index.ts"></script>
-    <link rel="stylesheet" href="styles.scss" />
-    <title>DD psychology</title>
+    <title>DD Psychology</title>
   </head>
   <body>
 
     <nav class="nav">
-      <div class="nav__bar">
-          <div class="nav__toggle">
-              <span class="nav__span"> </span>
-          </div>
-          <ul class="nav__list">
-            <li class="nav__item"><a href="/" id="home" class="nav__link nav__link--color">Strona Główna</a></li>
-            <li class="nav__item"><a href="/about-us" id="about" class="nav__link">O nas</a></li>
-            <li class="nav__item"><a href="#" id="forWhom" class="nav__link">Dla kogo</a></li>
-            <li class="nav__item"><a href="#" id="opinions" class="nav__link">Opinie</a></li>
-            <li class="nav__item"><a href="#" id="contact" class="nav__link">Kontakt</a></li>
-          </ul>
-      </div>
+        <div class="nav__toggle">
+          <i id="bars" class="fa-solid fa-bars"></i>
+          <i id="xmark" class="fa-solid fa-xmark hidden"></i>
+        </div>
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#" id="home" class="nav__link nav__link--color">Strona Główna</a></li>
+          <li class="nav__item"><a href="/about-us" id="about" class="nav__link">O nas</a></li>
+          <li class="nav__item"><a href="#" id="forWhom" class="nav__link">Dla kogo</a></li>
+          <li class="nav__item"><a href="#opinions" id="opinions" class="nav__link">Opinie</a></li>
+          <li class="nav__item"><a href="#contact" id="contact" class="nav__link">Kontakt</a></li>
+        </ul>
     </nav>
 
     <div id="mainContainer" class="mainContainer">
@@ -96,7 +100,6 @@
 
       </section>
 
-      <section id="about">o nas (zdjecia i imie nazwisko krzywe, opis obok/pod)</section>
       <section id="forWhom">dla kogo jestesmy</section>
 
       <section id="opinions" class="opinions">
@@ -127,7 +130,7 @@
             </div>
             <div class="opinions__wrapper__inner--el swiper-slide">
               <h3>Johnny Mielony</h3>
-              <p>Jakiś długi opis zeby sprawdzic czy  bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla</p>
+              <p>Jakiś długi opis zeby sprawdzic czyla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla</p>
               <div class="stars">
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
@@ -142,7 +145,7 @@
       </section>
 
       <section class="contact" id="contact">
-        <h1 class='contact__header'>Skontaktuj się z nami !</h1>
+        <h1 class='contact__header'>Skontaktuj się z nami!</h1>
         <div class="contact__infos">
           <div class="contact__square">
             <i class="fa-solid fa-mobile contact__icon"></i>
@@ -170,6 +173,7 @@
             <li class="contact__social"><a class="contact__link" target="_blank" href="https://www.instagram.com/"><i class="fab fa-instagram contact__icon"></i></a></li>
           </ul>
         </div>
+        <h2>Gdzie nas znajdziesz?</h2>
         <div class="contact__map">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7205.820205908822!2d19.186401753002635!3d50.31726954912924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4716da3802989ee7%3A0x3ab1ddaf67b10bdf!2sTadeusza%20Rejtana%2020%2C%2041-300%20D%C4%85browa%20G%C3%B3rnicza!5e0!3m2!1spl!2spl!4v1690398670936!5m2!1spl!2spl" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>        
         </div>
@@ -178,7 +182,6 @@
     </div>
 
     <footer class="footer">
-      <div class="footer__go-up"><i class="fas fa-angle-up footer__go-up-icon"></i></div>
       <div class="footer__copy"><p class="footer__text">Bezpieczna Przystań - Wszystkie prawa zastrzeżone &copy; 2021</p></div>
     </footer> 
        

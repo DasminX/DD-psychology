@@ -3,43 +3,70 @@ import Swiper from "swiper";
 // import Swiper styles
 // import "swiper/css"; */
 
+/*   const presentationals = Array.from(
+  document.querySelectorAll("p[class*='__presentation__']")
+) as HTMLParagraphElement[];
+if (Array.isArray(presentationals) && presentationals.length > 0) {
+  for (let i = 0; i < presentationals.length; i++) {
+    presentationals[i].dataset.aos = "fade-right";
+    presentationals[i].dataset.aosDuration = "550";
+    presentationals[i].classList.add("aos-init");
+  }
+} */
+
 function initApp() {
-  /*   const presentationals = Array.from(
-    document.querySelectorAll("p[class*='__presentation__']")
-  ) as HTMLParagraphElement[];
-  if (Array.isArray(presentationals) && presentationals.length > 0) {
-    for (let i = 0; i < presentationals.length; i++) {
-      presentationals[i].dataset.aos = "fade-right";
-      presentationals[i].dataset.aosDuration = "550";
-      presentationals[i].classList.add("aos-init");
+  initAos();
+  initSwiper();
+  initNavigation();
+
+  function initAos() {
+    if (typeof AOS === "object" && typeof AOS.init === "function") {
+      AOS.init();
     }
-  } */
-  if (typeof AOS === "object" && typeof AOS.init === "function") {
-    AOS.init();
   }
 
-  if (typeof Swiper === "function") {
-    const swiperCont = document.querySelector(".swiper") as HTMLDivElement;
-    if (!swiperCont) {
-      return;
+  function initSwiper() {
+    if (typeof Swiper === "function") {
+      const swiperCont = document.querySelector(".swiper") as unknown as HTMLDivElement;
+      if (!swiperCont) return;
+
+      const swiper = new Swiper(".swiper", {
+        speed: 600,
+        spaceBetween: 48,
+        loop: true,
+        centeredSlides: true,
+        touchStartForcePreventDefault: true,
+        setWrapperSize: true,
+        autoplay: {
+          delay: 3000,
+        },
+      });
     }
-    /*     console.log("przechodzi");
-    const swiper = new Swiper(swiperCont, {
-      direction: "horizontal",
-      loop: true,
-    }); */
-    const swiper = new Swiper(".swiper", {
-      speed: 600,
-      spaceBetween: 48,
-      loop: true,
-      centeredSlides: true,
-      touchStartForcePreventDefault: true,
-      setWrapperSize: true,
-      autoplay: {
-        delay: 3000,
-      },
+  }
+
+  function initNavigation() {
+    const nav = document.querySelector(".nav") as unknown as HTMLElement;
+    const navToggle = document.querySelector(".nav__toggle") as unknown as HTMLDivElement;
+    const navList = document.querySelector(".nav__list") as unknown as HTMLUListElement;
+    if (!nav || !navToggle || !navList) return; // set desktop view
+
+    navToggle.addEventListener("click", (e: Event) => {
+      if (nav.classList.contains("nav__active")) {
+        nav.classList.remove("nav__active");
+      } else {
+        nav.classList.add("nav__active");
+      }
     });
-    console.dir(swiper);
+
+    // smooth scroll
+
+    navList.addEventListener("click", (e) => {
+      if (!(e.target instanceof Element)) return;
+      if (!e.target.closest("li")) return;
+
+      // const id =
+      nav.classList.remove("nav__active");
+    });
   }
 }
 

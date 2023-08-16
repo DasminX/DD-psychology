@@ -1,11 +1,3 @@
-const navWrapper = document.querySelector(".nav__bar");
-const navToggle = document.querySelector(".nav__toggle");
-
-navToggle.addEventListener("click", () => {
-  navWrapper.classList.toggle("nav__bar--active");
-  navToggle.classList.toggle("nav__toggle--active");
-});
-
 /* do zrefactorowania */
 /* 
 const homeLink = document.getElementById("mainContainer"); //przyciski navigacji w małych rozdzielczościach

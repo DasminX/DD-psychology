@@ -36,6 +36,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -45,7 +46,6 @@ body {
   color: $white;
   font-family: $font-roboto;
   line-height: 170%;
-  scroll-behavior: smooth;
 }
 
 body {
