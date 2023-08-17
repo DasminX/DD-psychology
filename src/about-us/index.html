@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="pl">
   <head>
+    <!-- META -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
@@ -13,18 +14,22 @@
     />
     <meta
       name="keywords"
-      content="psycholog,bezpieczna,przystań,profesjonalizm,doświadczenie,psycholog śląsk, psycholog Jaworzno, psycholog Dąbrowa Górnicza, psycholog dla dzieci, psycholog dla nastolatka, psycholog dla nastolatki, psycholog dla dorosłych"
+      content="psycholog,bezpieczna,przystań,profesjonalizm,doświadczenie,psycholog śląsk,psycholog Jaworzno, psycholog Dąbrowa Górnicza, psycholog dla dzieci, psycholog dla nastolatka, psycholog dla nastolatki, psycholog dla dorosłych"
     />
     <meta property="og:site_name" content="Bezpieczna Przystań" />
     <meta property="og:type" content="website" />
+
+    <!-- LINK -->
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
       integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
       crossorigin="anonymous"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@400;500;600;700&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link
       rel="stylesheet"
@@ -33,11 +38,9 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@400;500;600;700&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
-      rel="stylesheet"
-    />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../styles.scss" />
+
+    <!-- SCRIPT -->
     <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script
       defer
@@ -46,9 +49,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-    <script defer src="../navToogle.js"></script>
     <script defer type="module" src="../index.ts"></script>
-    <link rel="stylesheet" href="../styles.scss" />
     <title>DD psychology</title>
   </head>
   <body>
@@ -61,8 +62,14 @@
         <li class="nav__item"><a href="/" id="home" class="nav__link nav__link--color">Strona Główna</a></li>
         <li class="nav__item"><a href="#" id="about" class="nav__link">O nas</a></li>
         <li class="nav__item"><a href="#" id="forWhom" class="nav__link">Dla kogo</a></li>
-        <li class="nav__item"><a href="#" id="opinions" class="nav__link">Opinie</a></li>
-        <li class="nav__item"><a href="#" id="contact" class="nav__link">Kontakt</a></li>
+        <li class="nav__item"><a href="#opinions" id="opinions" class="nav__link">Opinie</a></li>
+        <li class="nav__item"><a href="#contact" id="contact" class="nav__link">Kontakt</a></li>
+        <li class="nav__item">
+          <div class="nav__item--socials">
+            <a href="" id="nav-instagram" class="nav__link"><i class="fa-brands fa-instagram"></i></a>
+            <a href="" id="nav-facebook" class="nav__link"><i class="fa-brands fa-facebook"></i></a>
+          </div>
+        </li>
       </ul>
     </nav>
 
@@ -74,7 +81,7 @@
             <strong>Dominika Jazowska</strong>
           </h2>
           <div class="img-placeholder">
-            <!-- <img src="" alt="Psycholog Dominika Jazowska"> -->
+            <img src="../assets/domcia-solo.jpg" alt="Psycholog Dominika Jazowska" />
           </div>
           <p class="aboutus__presentation__description">
             Witaj, jestem Dominika - Magister Psychologii specjalizująca się w klinicznej psychologii dzieci i młodzieży
@@ -102,7 +109,7 @@
             <strong>Dominika Wąchadło</strong>
           </h2>
           <div class="img-placeholder">
-            <!-- <img src="" alt="Psycholog Dominika Wąchadło"> -->
+            <img src="../assets/domi-solo.jpg" alt="Psycholog Dominika Wąchadło" />
           </div>
           <p class="aboutus__presentation__description">
             Cześć, jestem Dominika - psycholożka, pedagożka i trenerka umiejętności społecznych dla dzieci i młodzieży.
@@ -129,7 +136,6 @@
     </div>
 
     <footer class="footer">
-      <div class="footer__go-up"><i class="fas fa-angle-up footer__go-up-icon"></i></div>
       <div class="footer__copy">
         <p class="footer__text">Bezpieczna Przystań - Wszystkie prawa zastrzeżone &copy; 2021</p>
       </div>
