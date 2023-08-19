@@ -59,15 +59,19 @@
         <i id="xmark" class="fa-solid fa-xmark hidden"></i>
       </div>
       <ul class="nav__list">
-        <li class="nav__item"><a href="/" id="home" class="nav__link nav__link--color">Strona Główna</a></li>
-        <li class="nav__item"><a href="#" id="about" class="nav__link">O nas</a></li>
-        <li class="nav__item"><a href="#" id="forWhom" class="nav__link">Dla kogo</a></li>
-        <li class="nav__item"><a href="#opinions" id="opinions" class="nav__link">Opinie</a></li>
-        <li class="nav__item"><a href="#contact" id="contact" class="nav__link">Kontakt</a></li>
+        <li class="nav__item"><a href="/" class="nav__link nav__link--color">Strona Główna</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">O nas</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">Dla kogo</a></li>
+        <li class="nav__item"><a href="/#opinions" class="nav__link">Opinie</a></li>
+        <li class="nav__item"><a href="/#contact" class="nav__link">Kontakt</a></li>
         <li class="nav__item">
           <div class="nav__item--socials">
-            <a href="" id="nav-instagram" class="nav__link"><i class="fa-brands fa-instagram"></i></a>
-            <a href="" id="nav-facebook" class="nav__link"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/" target="_blank" id="nav-instagram" class="nav__link"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href="https://www.facebook.com/" target="_blank" id="nav-facebook" class="nav__link"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
           </div>
         </li>
       </ul>
@@ -81,7 +85,21 @@
             <strong>Dominika Jazowska</strong>
           </h2>
           <div class="img-placeholder">
-            <img src="../assets/domcia-solo.jpg" alt="Psycholog Dominika Jazowska" loading="lazy" />
+            <picture>
+              <source
+                media="(max-width:600px)"
+                srcset="../assets/domcia-solo-mob.jpg"
+                alt="Psycholog Dominika Jazowska"
+                loading="lazy"
+              />
+              <source
+                media="(min-width:601px)"
+                srcset="../assets/domcia-solo.jpg"
+                alt="Psycholog Dominika Jazowska"
+                loading="lazy"
+              />
+              <img src="../assets/domcia-solo.jpg" alt="Psycholog Dominika Jazowska" loading="lazy" />
+            </picture>
           </div>
           <p class="aboutus__presentation__description">
             Witaj, jestem Dominika - Magister Psychologii specjalizująca się w klinicznej psychologii dzieci i młodzieży
@@ -109,7 +127,15 @@
             <strong>Dominika Wąchadło</strong>
           </h2>
           <div class="img-placeholder">
-            <img src="../assets/domi-solo.jpg" alt="Psycholog Dominika Wąchadło" loading="lazy" />
+            <picture>
+              <source
+                media="(max-width:600px)"
+                srcset="../assets/domi-solo-mob.jpg"
+                alt="Psycholog Dominika Wąchadło"
+              />
+              <source media="(min-width:601px)" srcset="../assets/domi-solo.jpg" alt="Psycholog Dominika Wąchadło" />
+              <img src="../assets/domi-solo.jpg" alt="Psycholog Dominika Wąchadło" loading="lazy" />
+            </picture>
           </div>
           <p class="aboutus__presentation__description">
             Cześć, jestem Dominika - psycholożka, pedagożka i trenerka umiejętności społecznych dla dzieci i młodzieży.
@@ -137,7 +163,7 @@
 
     <footer class="footer">
       <div class="footer__copy">
-        <p class="footer__text">Bezpieczna Przystań - Wszystkie prawa zastrzeżone &copy; 2021</p>
+        <p class="footer__text">D&D - Bezpieczna Przystań.</p>
       </div>
     </footer>
   </body>

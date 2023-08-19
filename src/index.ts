@@ -56,17 +56,32 @@ function initApp() {
       } else {
         nav.classList.add("nav__active");
       }
-    });
 
-    // smooth scroll
+      changeNavColor();
+    });
 
     navList.addEventListener("click", (e) => {
       if (!(e.target instanceof Element)) return;
       if (!e.target.closest("li")) return;
 
-      // const id =
       nav.classList.remove("nav__active");
     });
+
+    window.addEventListener("scroll", changeNavColor);
+
+    function changeNavColor() {
+      if (nav.classList.contains("nav__active")) {
+        nav.classList.add("scrolled");
+        return;
+      }
+      if (nav.classList.contains("scrolled")) {
+        if (window.scrollY > window.outerHeight / 10) return;
+        nav.classList.remove("scrolled");
+      } else {
+        if (window.scrollY <= window.outerHeight / 10) return;
+        nav.classList.add("scrolled");
+      }
+    }
   }
 }
 

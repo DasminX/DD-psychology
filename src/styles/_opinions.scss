@@ -1,4 +1,8 @@
 .opinions {
+  h1 {
+    padding: 1.25rem 0;
+  }
+
   &__wrapper {
     width: 90%;
     background-color: $white;
@@ -9,9 +13,7 @@
       &--el {
         display: flex;
         flex-direction: column;
-        /*         max-height: 16rem;
-        overflow-y: auto; */
-        // todo
+        height: auto;
 
         h3 {
           font-weight: 700;

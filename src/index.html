@@ -42,15 +42,15 @@
           <i id="xmark" class="fa-solid fa-xmark hidden"></i>
         </div>
         <ul class="nav__list">
-          <li class="nav__item"><a href="#" id="home" class="nav__link nav__link--color">Strona Główna</a></li>
-          <li class="nav__item"><a href="/about-us" id="about" class="nav__link">O nas</a></li>
-          <li class="nav__item"><a href="#" id="forWhom" class="nav__link">Dla kogo</a></li>
-          <li class="nav__item"><a href="#opinions" id="opinions" class="nav__link">Opinie</a></li>
-          <li class="nav__item"><a href="#contact" id="contact" class="nav__link">Kontakt</a></li>
+          <li class="nav__item"><a href="#" class="nav__link nav__link--color">Strona Główna</a></li>
+          <li class="nav__item"><a href="/about-us" class="nav__link">O nas</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Dla kogo</a></li>
+          <li class="nav__item"><a href="#opinions" class="nav__link">Opinie</a></li>
+          <li class="nav__item"><a href="#contact" class="nav__link">Kontakt</a></li>
           <li class="nav__item">
             <div class="nav__item--socials">
-              <a href="" id="nav-instagram" class="nav__link"><i class="fa-brands fa-instagram"></i></a>
-              <a href="" id="nav-facebook" class="nav__link"><i class="fa-brands fa-facebook"></i></a>
+              <a href="https://www.instagram.com/" target="_blank" id="nav-instagram" class="nav__link"><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://www.facebook.com/" target="_blank" id="nav-facebook" class="nav__link"><i class="fa-brands fa-facebook"></i></a>
             </div>
           </li>
         </ul>
@@ -75,11 +75,15 @@
         <h1>O nas</h1>
         <div class="aboutDDP__presentation">
           <h2 class="aboutus__presentation__header">
-            <strong>Bezpieczna Przystań - Gabinet Psychologiczny</strong>
+            <strong>D&D Bezpieczna Przystań - Gabinet Psychologiczny</strong>
           </h2>
           <!-- do przeskalowania zdjecia! -->
           <div class="img-placeholder">
-            <img src="./assets/domcie-duo.jpg" alt="Dominika Jazowska i Dominika Wąchadło">
+            <picture>
+              <source media="(max-width:600px)" srcset="./assets/domcie-duo-mob.jpg" alt="Dominika Jazowska i Dominika Wąchadło">
+              <source media="(min-width:601px)" srcset="./assets/domcie-duo.jpg" alt="Dominika Jazowska i Dominika Wąchadło">
+              <img src="./assets/domcie-duo.jpg" alt="Dominika Jazowska i Dominika Wąchadło" loading="lazy" />
+            </picture>
           </div>
           <p class="aboutDDP__presentation__description">
             Witamy Cię w naszej <strong>Bezpiecznej Przystani</strong> stworzonej dla Ciebie. 
@@ -109,7 +113,6 @@
 
       <!-- <section id="forWhom">dla kogo jestesmy</section> -->
 
-      <!-- Opinie do napisania! -->
       <section id="opinions" class="opinions">
         <h1>Opinie</h1>
         <div class="opinions__wrapper swiper">
@@ -158,27 +161,28 @@
           <div class="contact__square">
             <i class="fa-solid fa-mobile contact__icon"></i>
             <p class="contact__paragraph">Telefon</p>
-            <a href="tel:+483123123" class="contact__info">+48 999 000 111</a>
-            <a href="tel:+483123123" class="contact__info" >+48 999 000 111</a>
+            <p class="contact__paragraph name">Dominika Jazowska</p>
+            <a href="tel:+48789049495" class="contact__info">+48 789 049 495</a>
+            <p class="contact__paragraph name">Dominika Wąchadło</p>
+            <a href="tel:+48123456789" class="contact__info" >+48 123 456 789</a>
           </div>
           <div class="contact__square">
             <i class="fa-solid fa-house contact__icon"></i>
             <p class="contact__paragraph">Adres</p>
-            <p  class="contact__info">ul.Tadeusza Rejtana 20</p>
-            <p  class="contact__info" >Dąbrowa Górnicza</p>
+            <p  class="contact__info">ul. Tadeusza Rejtana 20</p>
+            <p  class="contact__info" >41-300 Dąbrowa Górnicza</p>
           </div>
           <div class="contact__square">
             <i class="fa-solid fa-envelope contact__icon"></i>
             <p class="contact__paragraph">Email</p>
-            <a  class="contact__info">mailDominikinr1@gmail.com</p>
-            <a  class="contact__info" >mailDominikinr2@gmail.com</p>
+            <a  class="contact__info">dd.bezpiecznaprzystan@gmail.com</p>
           </div>
         </div>
         
         <div class="contact__socials">
           <ul class="contact__list">
-            <li class="contact__social"><a class="contact__link" target="_blank" href="https://www.facebook.com/"><i class="fab fa-facebook-f contact__icon"></i></a></li>
-            <li class="contact__social"><a class="contact__link" target="_blank" href="https://www.instagram.com/"><i class="fab fa-instagram contact__icon"></i></a></li>
+            <li class="contact__social"><a class="contact__link" target="_blank" href="https://www.facebook.com/"><i class="fa-brands fa-instagram"></i></a></li>
+            <li class="contact__social"><a class="contact__link" target="_blank" href="https://www.instagram.com/"><i class="fa-brands fa-facebook"></i></a></li>
           </ul>
         </div>
         <h2>Gdzie nas znajdziesz?</h2>
@@ -191,7 +195,7 @@
 
     <footer class="footer">
       <div class="footer__copy">
-        <p class="footer__text">D&D - Bezpieczna Przystań. Wszystkie prawa zastrzeżone &copy; 2023</p>
+        <p class="footer__text">D&D - Bezpieczna Przystań.</p>
       </div>
     </footer> 
        
