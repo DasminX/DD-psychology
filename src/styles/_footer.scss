@@ -1,0 +1,37 @@
+.footer {
+  @include flex(center, center, column);
+  position: relative;
+  background-color: #2d2e38;
+  border-top: 1px solid $white;
+  scroll-behavior: auto;
+  padding: 1rem;
+
+  .footer__list {
+    list-style-type: none;
+    @include flex(space-around, center, column);
+    width: 50%;
+    min-height: 8em;
+    @include mq(tablet) {
+      width: 50%;
+    }
+    @include mq-land(tablet) {
+      width: 50%;
+    }
+    @include mq-land(desktop-wide) {
+      width: 30%;
+    }
+  }
+
+  .footer__copy {
+    @include flex(center, center, row);
+    width: 100%;
+    .footer__text {
+      text-align: center;
+      padding: 0 20px;
+      font-family: $family-raleway;
+      font-weight: bold;
+      color: $white;
+      font-style: italic;
+    }
+  }
+}
