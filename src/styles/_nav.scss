@@ -1,10 +1,10 @@
 .nav {
-  width: 100%;
-  height: 3rem;
-  background-color: $lightblue;
   position: fixed;
   top: 0;
   left: 0;
+  width: 100%;
+  height: 3rem;
+  background-color: $lightblue;
   transition: height 0.3s, background-color 0.3s;
   overflow: hidden;
   z-index: 1000000;
@@ -18,9 +18,7 @@
   }
 
   &__toggle {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
+    @include flex(row, flex-end, center);
     height: 3rem;
     width: 10%;
     margin-left: auto;
@@ -48,11 +46,8 @@
   }
 
   &__list {
+    @include flex(column, space-around, center);
     font-size: 110%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
     transition: 0.3s;
 
     @media screen and (min-width: 1024px) {
@@ -67,10 +62,6 @@
       transition: 0.3s;
 
       @media screen and (min-width: 1024px) {
-        a {
-          transition: 0.3s;
-        }
-
         &:hover a {
           color: $brass;
         }
@@ -80,6 +71,7 @@
         width: 100%;
         height: 100%;
         display: block;
+        transition: 0.3s;
 
         &.current-tab {
           color: $brass;
@@ -87,9 +79,7 @@
       }
 
       .nav__item--socials {
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
+        @include flex(row, space-evenly, center);
         width: 50%;
         margin: 0 auto;
 
@@ -114,38 +104,37 @@
             &:hover svg path {
               fill: $brass;
               stroke: $brass;
-              color: $brass;
             }
           }
         }
       }
     }
   }
-}
 
-.nav.nav__active {
-  height: 100vh;
+  &.nav__active {
+    height: 100vh;
 
-  .nav__toggle {
-    svg {
-      transform: translateX(0);
+    .nav__toggle {
+      svg {
+        transform: translateX(0);
 
-      &#bars {
-        opacity: 0;
-        visibility: hidden;
-      }
+        &#bars {
+          opacity: 0;
+          visibility: hidden;
+        }
 
-      &#xmark {
-        opacity: 1;
-        visibility: visible;
+        &#xmark {
+          opacity: 1;
+          visibility: visible;
+        }
       }
     }
-  }
 
-  & .nav__list {
-    li {
-      padding-top: 1rem;
-      padding-bottom: 1rem;
+    & .nav__list {
+      li {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+      }
     }
   }
 }

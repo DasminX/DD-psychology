@@ -2,53 +2,46 @@
   width: 100%;
   height: auto;
 
-  .contact__header {
-    margin: 0 auto;
-    text-align: center;
-    padding: 1.25rem;
-  }
-
   .contact__infos {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    flex-wrap: wrap;
+    @include flex(column, center, center);
+
+    @media screen and (min-width: 1024px) {
+      @include flex(row, center, flex-start);
+      width: 100%;
+    }
 
     .contact__square {
-      display: flex;
-      align-content: center;
-      justify-content: flex-start;
-      flex-direction: column;
-      width: 100%;
-      margin: 1.25rem 0;
+      @include flex(column, flex-start, center);
 
       @media screen and (min-width: 1024px) {
-        width: 30%;
+        @include flex(column, flex-start, center);
+        width: 100%;
       }
 
-      .contact__icon {
-        padding: 0 0 0.4rem 0;
-        font-size: 150%;
-        color: $brass;
+      text-align: center;
+      margin-bottom: 1.5rem;
+      font-style: italic;
+
+      &__icon {
+        svg {
+          font-size: 150%;
+          color: $brass;
+        }
+
+        p {
+          text-transform: uppercase;
+          font-weight: 600;
+          color: $brass;
+          margin: 0.5rem auto 0;
+        }
       }
 
-      .contact__paragraph {
-        text-transform: uppercase;
-        font-weight: 600;
-        font-style: italic;
-        padding: 3px;
-        color: $brass;
-
-        &.name {
-          text-transform: none;
-          color: $white;
+      &__info {
+        p {
           font-weight: bold;
-          margin-top: 0;
 
-          @media screen and (min-width: 1024px) {
-            &:not(&:nth-of-type(2)) {
-              margin-top: 1rem;
-            }
+          &.name {
+            color: $brass;
           }
         }
       }
@@ -108,6 +101,7 @@
     background-color: #fff;
 
     @media screen and (min-width: 1024px) {
+      width: 80%;
       aspect-ratio: 16/9;
     }
   }

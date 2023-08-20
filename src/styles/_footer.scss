@@ -1,5 +1,5 @@
 .footer {
-  @include flex(center, center, column);
+  @include flex(column, center, center);
   position: relative;
   background-color: #2d2e38;
   border-top: 1px solid $white;
@@ -8,7 +8,7 @@
 
   .footer__list {
     list-style-type: none;
-    @include flex(space-around, center, column);
+    @include flex(column, space-around, center);
     width: 50%;
     min-height: 8em;
     @include mq(tablet) {
@@ -20,7 +20,7 @@
   }
 
   .footer__copy {
-    @include flex(center, center, row);
+    @include flex(row, center, center);
     width: 100%;
     .footer__text {
       text-align: center;
