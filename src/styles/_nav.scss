@@ -9,6 +9,10 @@
   overflow: hidden;
   z-index: 1000000;
 
+  @media screen and (min-width: 1024px) {
+    padding: 0.5rem;
+  }
+
   &.scrolled {
     background-color: $graphite;
   }
@@ -20,6 +24,10 @@
     height: 3rem;
     width: 10%;
     margin-left: auto;
+
+    @media screen and (min-width: 1024px) {
+      display: none;
+    }
 
     svg {
       font-size: 1.5rem;
@@ -47,15 +55,35 @@
     justify-content: space-around;
     transition: 0.3s;
 
+    @media screen and (min-width: 1024px) {
+      flex-direction: row;
+      width: 80%;
+      margin: 0 auto;
+    }
+
     li {
       width: 100%;
       text-align: center;
       transition: 0.3s;
 
+      @media screen and (min-width: 1024px) {
+        a {
+          transition: 0.3s;
+        }
+
+        &:hover a {
+          color: $brass;
+        }
+      }
+
       a {
         width: 100%;
         height: 100%;
         display: block;
+
+        &.current-tab {
+          color: $brass;
+        }
       }
 
       .nav__item--socials {
@@ -65,11 +93,30 @@
         width: 50%;
         margin: 0 auto;
 
+        @media screen and (min-width: 1024px) {
+          margin: 0 0 0 auto;
+        }
+
         a {
           width: auto;
           height: 100%;
           aspect-ratio: 1/1;
           font-size: 150%;
+
+          svg path {
+            transition: 0.3s;
+          }
+
+          @media screen and (min-width: 1024px) {
+            margin-left: 0.5rem;
+            margin-right: 0.5rem;
+
+            &:hover svg path {
+              fill: $brass;
+              stroke: $brass;
+              color: $brass;
+            }
+          }
         }
       }
     }

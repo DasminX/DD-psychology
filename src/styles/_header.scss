@@ -10,6 +10,10 @@
     width: 80%;
     height: auto;
 
+    @media screen and (min-width: 1024px) {
+      width: 40%;
+    }
+
     & img {
       width: 100%;
       height: auto;

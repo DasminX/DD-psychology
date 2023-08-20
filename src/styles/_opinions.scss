@@ -9,6 +9,11 @@
     border-radius: 1rem;
     padding: 1rem;
 
+    @media screen and (min-width: 1024px) {
+      width: 75%;
+      padding: 2rem;
+    }
+
     &__inner {
       &--el {
         display: flex;
@@ -30,6 +35,10 @@
           align-items: center;
           justify-content: space-evenly;
           margin: auto auto 0 auto;
+
+          @media screen and (min-width: 1024px) {
+            width: 15%;
+          }
 
           & * {
             color: gold;

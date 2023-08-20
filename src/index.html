@@ -30,7 +30,7 @@
     <!-- SCRIPT -->
     <script defer src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>    <script defer src="navToogle.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script defer type="module" src="index.ts"></script>
     <title>DD Psychology</title>
   </head>
@@ -42,15 +42,15 @@
           <i id="xmark" class="fa-solid fa-xmark hidden"></i>
         </div>
         <ul class="nav__list">
-          <li class="nav__item"><a href="#" class="nav__link nav__link--color">Strona Główna</a></li>
-          <li class="nav__item"><a href="/about-us" class="nav__link">O nas</a></li>
-          <li class="nav__item"><a href="/descriptions" class="nav__link">Nasze usługi</a></li>
-          <li class="nav__item"><a href="#opinions" class="nav__link">Opinie</a></li>
-          <li class="nav__item"><a href="#contact" class="nav__link">Kontakt</a></li>
+          <li class="nav__item"><a id="navitem-home" href="#" class="nav__link nav__link--color">Strona Główna</a></li>
+          <li class="nav__item"><a id="navitem-about-us" href="/about-us" class="nav__link">O nas</a></li>
+          <li class="nav__item"><a id="navitem-descriptions" href="/descriptions" class="nav__link">Nasze usługi</a></li>
+          <li class="nav__item"><a id="navitem-opinions" href="#opinions" class="nav__link">Opinie</a></li>
+          <li class="nav__item"><a id="navitem-contact" href="#contact" class="nav__link">Kontakt</a></li>
           <li class="nav__item">
             <div class="nav__item--socials">
-              <a href="https://www.instagram.com/" target="_blank" id="nav-instagram" class="nav__link"><i class="fa-brands fa-instagram"></i></a>
-              <a href="https://www.facebook.com/" target="_blank" id="nav-facebook" class="nav__link"><i class="fa-brands fa-facebook"></i></a>
+              <a href="https://instagram.com/dd.bezpiecznaprzystan?igshid=MzRlODBiNWFlZA==" target="_blank" id="nav-instagram" class="nav__link"><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://www.facebook.com/profile.php?id=61550618512601" target="_blank" id="nav-facebook" class="nav__link"><i class="fa-brands fa-facebook"></i></a>
             </div>
           </li>
         </ul>
@@ -74,45 +74,46 @@
       <section id="aboutDDP" class="aboutDDP">
         <h1>O nas</h1>
         <div class="aboutDDP__presentation">
-          <h2 class="aboutus__presentation__header">
-            <strong>D&D Bezpieczna Przystań - Gabinet Psychologiczny</strong>
-          </h2>
           <!-- do przeskalowania zdjecia! -->
           <div class="img-placeholder">
+            <h2 class="aboutus__presentation__header">
+              <strong>D&D Bezpieczna Przystań - Gabinet Psychologiczny</strong>
+            </h2>
             <picture>
               <source media="(max-width:600px)" srcset="./assets/domcie-duo-mob.jpg" alt="Dominika Jazowska i Dominika Wąchadło">
               <source media="(min-width:601px)" srcset="./assets/domcie-duo.jpg" alt="Dominika Jazowska i Dominika Wąchadło">
               <img src="./assets/domcie-duo.jpg" alt="Dominika Jazowska i Dominika Wąchadło" loading="lazy" />
             </picture>
           </div>
-          <p class="aboutDDP__presentation__description">
-            Witamy Cię w naszej <strong>Bezpiecznej Przystani</strong> stworzonej dla Ciebie. 
-          </p>
-          <p class="aboutDDP__presentation__description">
+          <div class="textblock">
+
+            <p class="aboutDDP__presentation__description">
+              Witamy Cię w naszej <strong>Bezpiecznej Przystani</strong> stworzonej dla Ciebie. 
+            </p>
+            <p class="aboutDDP__presentation__description">
             W naszej przestrzeni znajdzie się <strong>miejsce dla każdego</strong>, zarówno dla dzieci i młodzieży jak i dla osoby dorosłej. 
-                      </p>
-          <p class="aboutDDP__presentation__description">
-
-            Bezpieczna przystań powstała w celu udzielania wsparcia i pomocy psychologicznej dla tych którzy zmagają się z trudnościami w wielu obszarach swojego życia. 
-                      </p>
-          <p class="aboutDDP__presentation__description">
-
-            W naszym miejscu jest także przestrzeń dla tych, którzy nie zmagają się z problemami natury psychologicznej, ale stawiają na samorozwój, wytrwałość w osiąganiu celów lub wiarę w swoje możliwości.
-                      </p>
-          <p class="aboutDDP__presentation__description">
-
-             W natłoku obowiązków często można zgubić samego siebie. W Bezpiecznej Przystani umożliwimy Ci zatrzymanie się i chwilę refleksji. 
-                       </p>
-          <p class="aboutDDP__presentation__description">
-
+           </p>
+            <p class="aboutDDP__presentation__description">
+              
+              Bezpieczna przystań powstała w celu udzielania wsparcia i pomocy psychologicznej dla tych którzy zmagają się z trudnościami w wielu obszarach swojego życia. 
+            </p>
+            <p class="aboutDDP__presentation__description">
+              
+              W naszym miejscu jest także przestrzeń dla tych, którzy nie zmagają się z problemami natury psychologicznej, ale stawiają na samorozwój, wytrwałość w osiąganiu celów lub wiarę w swoje możliwości.
+            </p>
+            <p class="aboutDDP__presentation__description">
+              
+              W natłoku obowiązków często można zgubić samego siebie. W Bezpiecznej Przystani umożliwimy Ci zatrzymanie się i chwilę refleksji. 
+            </p>
+            <p class="aboutDDP__presentation__description">
              Znajdziemy wspólnie najbardziej korzystny dla Ciebie rodzaj wsparcia i sposób na utrzymanie bądź korzystną modyfikację Twoich celów.
-                       </p>
-          <p class="aboutDDP__presentation__description">
-
+            </p>
+          </div>
+            
       </section>
 
       <!-- <section id="forWhom">dla kogo jestesmy</section> -->
-
+      
       <section id="opinions" class="opinions">
         <h1>Opinie</h1>
         <div class="opinions__wrapper swiper">
@@ -164,7 +165,7 @@
             <p class="contact__paragraph name">Dominika Jazowska</p>
             <a href="tel:+48789049495" class="contact__info">+48 789 049 495</a>
             <p class="contact__paragraph name">Dominika Wąchadło</p>
-            <a href="tel:+48123456789" class="contact__info" >+48 123 456 789</a>
+            <a href="tel:+48570190884" class="contact__info" >+48 570 190 884</a>
           </div>
           <div class="contact__square">
             <i class="fa-solid fa-house contact__icon"></i>
@@ -181,8 +182,8 @@
         
         <div class="contact__socials">
           <ul class="contact__list">
-            <li class="contact__social"><a class="contact__link" target="_blank" href="https://www.facebook.com/"><i class="fa-brands fa-instagram"></i></a></li>
-            <li class="contact__social"><a class="contact__link" target="_blank" href="https://www.instagram.com/"><i class="fa-brands fa-facebook"></i></a></li>
+            <li class="contact__social"><a class="contact__link" target="_blank" href="https://www.facebook.com/profile.php?id=61550618512601"><i class="fa-brands fa-instagram"></i></a></li>
+            <li class="contact__social"><a class="contact__link" target="_blank" href="https://instagram.com/dd.bezpiecznaprzystan?igshid=MzRlODBiNWFlZA=="><i class="fa-brands fa-facebook"></i></a></li>
           </ul>
         </div>
         <h2>Gdzie nas znajdziesz?</h2>

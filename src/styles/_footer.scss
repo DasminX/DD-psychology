@@ -17,10 +17,6 @@
     @include mq-land(tablet) {
       width: 50%;
     }
-    @include mq-land(desktop-wide) {
-      @include flex(space-around, flex-end, column);
-      width: 30%;
-    }
   }
 
   .footer__copy {

@@ -9,6 +9,7 @@ $graphite: #30343fff;
 $deepblue: #273469ff;
 $lightblue: #b8ccdc;
 $white: #fbfbfb;
+$brass: #b59410;
 
 $font-cytat: "Dancing Script", cursive;
 $font-roboto: "Roboto Condensed", sans-serif;
@@ -30,6 +31,25 @@ $family-raleway: "Raleway", sans-serif;
 // $font-xmedium: 1.25rem
 // $font-big: 1.5rem
 // $font-large: 2rem
+
+::-webkit-scrollbar {
+  width: 0.75rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: $white;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $graphite;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: $brass;
+}
 
 html,
 body {
@@ -57,6 +77,7 @@ body {
 
 #mainContainer {
   width: 90%;
+  max-width: 1024px;
   margin: 3rem auto 0;
   min-height: 100vh;
   height: auto;

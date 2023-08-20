@@ -1,7 +1,19 @@
 /* w ./about-us/index.html */
 .aboutus {
+  @media screen and (min-width: 1024px) {
+    margin: 6rem auto;
+  }
+
   &__presentation {
     margin: 1rem auto;
+
+    @media screen and (min-width: 1024px) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: max-content;
+      gap: 2rem;
+      margin: 4rem auto;
+    }
 
     &__header {
       background-color: $white;
@@ -18,7 +30,7 @@
 
       & img {
         width: 100%;
-        height: 100%;
+        height: auto;
         object-fit: cover;
       }
     }
@@ -29,4 +41,9 @@
       font-size: 110%;
     }
   }
+}
+
+.fill {
+  grid-row: max-content;
+  grid-column: 1/-1;
 }
