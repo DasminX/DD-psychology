@@ -1,43 +1,33 @@
 /* w ./about-us/index.html */
 .aboutus {
-  @media screen and (min-width: 1024px) {
-    margin: 6rem auto;
-  }
-
-  &__presentation {
-    margin: 1rem auto;
-
+  & .introduce__section__presentation {
     @media screen and (min-width: 1024px) {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: max-content;
-      gap: 2rem;
-      margin: 4rem auto;
-    }
+      grid-template-columns: repeat(3, 1fr);
+      margin: 0 auto 6rem;
 
-    &__header {
-      background-color: $white;
-      padding: 0.25rem;
-
-      strong {
-        color: $graphite;
+      & > .img-placeholder {
+        grid-column: 1/2;
       }
     }
 
-    & > .img-placeholder {
-      width: 100%;
-      height: auto;
+    .textblock {
+      @media screen and (min-width: 1024px) {
+        grid-column: 2/-1;
 
-      & img {
-        width: 100%;
-        height: auto;
-        object-fit: cover;
+        &.extend {
+          grid-column: 1/-1;
+        }
       }
+
+      & > p:nth-of-type(1) {
+        margin-top: 0;
+      }
+    }
+
+    & .introduce__section__presentation__description {
+      margin: 2rem auto;
+      font-weight: 300;
+      font-size: 110%;
     }
   }
-}
-
-.fill {
-  grid-row: max-content;
-  grid-column: 1/-1;
 }
