@@ -74,6 +74,16 @@ h6 {
   font-style: italic;
   text-align: center;
   margin: 0;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 90%;
+    max-width: 768px;
+    height: 1px;
+    background-color: $white;
+    margin: 0.75rem auto 0;
+  }
 }
 
 section {
