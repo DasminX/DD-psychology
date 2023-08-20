@@ -34,14 +34,14 @@ function initApp() {
         if (!swiperCont) return;
 
         const swiper = new Swiper(".swiper", {
-          speed: 600,
+          speed: 800,
           spaceBetween: 48,
           loop: true,
           centeredSlides: true,
           touchStartForcePreventDefault: true,
           setWrapperSize: true,
           autoplay: {
-            delay: 3000,
+            delay: 5000,
           },
         });
       }
@@ -58,7 +58,7 @@ function initApp() {
     function highlightNavLink() {
       try {
         const { pathname } = location;
-        const idSelector = pathname.slice(1).trim() || "home";
+        const idSelector = pathname.slice(1).trim().replace(/[/#]/gi, "") || "home";
         const cont = navList.querySelector(`#navitem-${idSelector}`);
         if (!cont) return;
         cont.classList.add("current-tab");
@@ -94,8 +94,6 @@ function initApp() {
     navList.addEventListener("click", (e) => {
       if (!(e.target instanceof Element)) return;
       if (!e.target.closest("li")) return;
-
-      highlightNavLink();
 
       nav.classList.remove("nav__active");
     });
