@@ -20,6 +20,7 @@
     <meta property="og:type" content="website" />
 
     <!-- LINK -->
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon.png" />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
@@ -133,7 +134,7 @@
 
     <div id="mainContainer" class="mainContainer">
       <header class="header" id="header">
-        <div class="header__logo-wrapper">
+        <div data-aos="fade-down" data-aos-duration="900" data-aos-once="true" class="header__logo-wrapper">
           <picture>
             <source
               media="(max-width:600px)"
@@ -148,7 +149,7 @@
             <img src="./assets/logo_dd.png" alt="Logo D&D Bezpieczna Przystań" />
           </picture>
         </div>
-        <blockquote>
+        <blockquote data-aos="fade-down" data-aos-duration="900" data-aos-delay="450" data-aos-once="true">
           <p>„Wszystko rozpoczyna się od myśli.</p>
           <p>Myśli prowadzą do uczuć,</p>
           <p>uczucia prowadzą do działań,</p>
@@ -157,12 +158,19 @@
         </blockquote>
       </header>
 
-      <section id="aboutDDP" class="introduce__section aboutDDP">
+      <section
+        data-aos="fade-down"
+        data-aos-once="true"
+        data-aos-offset="150"
+        data-aos-duration="500"
+        id="aboutDDP"
+        class="mainsection aboutDDP"
+      >
         <h1>O nas</h1>
-        <div class="introduce__section__presentation">
+        <div class="mainsection__presentation">
           <!-- do przeskalowania zdjecia! -->
           <div class="img-placeholder">
-            <h2 class="introduce__section__presentation__header">
+            <h2 class="mainsection__presentation__header">
               <strong>D&D Bezpieczna Przystań - Gabinet Psychologiczny</strong>
             </h2>
             <picture>
@@ -182,24 +190,62 @@
             </picture>
           </div>
           <div class="textblock">
-            <p class="description">Witamy Cię w naszej <strong>Bezpiecznej Przystani</strong> stworzonej dla Ciebie.</p>
-            <p class="description">
+            <p
+              data-aos="fade-up"
+              data-aos-once="true"
+              data-aos-offset="150"
+              data-aos-duration="500"
+              class="description"
+            >
+              Witamy Cię w naszej <strong>Bezpiecznej Przystani</strong> stworzonej dla Ciebie.
+            </p>
+            <p
+              data-aos="fade-up"
+              data-aos-once="true"
+              data-aos-offset="150"
+              data-aos-duration="500"
+              class="description"
+            >
               W naszej przestrzeni znajdzie się <strong>miejsce dla każdego</strong>, zarówno dla dzieci i młodzieży jak
               i dla osoby dorosłej.
             </p>
-            <p class="description">
+            <p
+              data-aos="fade-up"
+              data-aos-once="true"
+              data-aos-offset="150"
+              data-aos-duration="500"
+              class="description"
+            >
               Bezpieczna przystań powstała w celu udzielania wsparcia i pomocy psychologicznej dla tych którzy zmagają
               się z trudnościami w wielu obszarach swojego życia.
             </p>
-            <p class="description">
+            <p
+              data-aos="fade-up"
+              data-aos-once="true"
+              data-aos-offset="150"
+              data-aos-duration="500"
+              class="description"
+            >
               W naszym miejscu jest także przestrzeń dla tych, którzy nie zmagają się z problemami natury
               psychologicznej, ale stawiają na samorozwój, wytrwałość w osiąganiu celów lub wiarę w swoje możliwości.
             </p>
-            <p class="description">
+            <p
+              data-aos="fade-up"
+              data-aos-once="true"
+              data-aos-offset="150"
+              data-aos-duration="500"
+              class="description"
+            >
               W natłoku obowiązków często można zgubić samego siebie. W Bezpiecznej Przystani umożliwimy Ci zatrzymanie
               się i chwilę refleksji.
             </p>
-            <p class="description">
+            <p
+              data-aos="fade-up"
+              data-aos-once="true"
+              data-aos-offset="150"
+              data-aos-duration="500"
+              class="description"
+            >
               Znajdziemy wspólnie najbardziej korzystny dla Ciebie rodzaj wsparcia i sposób na utrzymanie bądź korzystną
               modyfikację Twoich celów.
             </p>
@@ -207,7 +253,14 @@
         </div>
       </section>
 
-      <section id="opinions" class="opinions">
+      <section
+        data-aos="fade-down"
+        data-aos-once="true"
+        data-aos-offset="150"
+        data-aos-duration="500"
+        id="opinions"
+        class="opinions"
+      >
         <h1>Opinie</h1>
         <div class="opinions__wrapper swiper">
           <div class="opinions__wrapper__inner swiper-wrapper">
@@ -256,9 +309,27 @@
         </div>
       </section>
 
-      <section class="contact" id="contact">
+      <section
+        data-aos="fade-down"
+        data-aos-once="true"
+        data-aos-offset="150"
+        data-aos-duration="500"
+        class="contact"
+        id="contact"
+      >
         <h1>Skontaktuj się z nami!</h1>
         <div class="contact__infos">
+          <div class="contact__square">
+            <div class="contact__square__icon">
+              <i class="fa-solid fa-house"></i>
+              <p>Adres</p>
+            </div>
+            <div class="contact__square__info">
+              <p title="Adres przyjęć pacjentów D&D Bezpieczna Przystań - Gabinet Psychologiczny">
+                ul. Tadeusza Rejtana 20 <br />41-300 Dąbrowa Górnicza
+              </p>
+            </div>
+          </div>
           <div class="contact__square">
             <div class="contact__square__icon">
               <i class="fa-solid fa-mobile"></i>
@@ -271,17 +342,6 @@
             <div class="contact__square__info">
               <p class="name">Dominika Wąchadło</p>
               <p title="Number telefonu do psycholog Dominiki Wąchadło">+48 570 190 884</p>
-            </div>
-          </div>
-          <div class="contact__square">
-            <div class="contact__square__icon">
-              <i class="fa-solid fa-house"></i>
-              <p>Adres</p>
-            </div>
-            <div class="contact__square__info">
-              <p title="Adres przyjęć pacjentów D&D Bezpieczna Przystań - Gabinet Psychologiczny">
-                ul. Tadeusza Rejtana 20 <br />41-300 Dąbrowa Górnicza
-              </p>
             </div>
           </div>
           <div class="contact__square">

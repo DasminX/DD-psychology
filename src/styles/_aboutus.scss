@@ -1,6 +1,6 @@
 /* w ./about-us/index.html */
 .aboutus {
-  & .introduce__section__presentation {
+  & .mainsection__presentation {
     @media screen and (min-width: 1024px) {
       grid-template-columns: repeat(3, 1fr);
       margin: 0 auto 6rem;

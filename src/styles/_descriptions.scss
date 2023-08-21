@@ -1,47 +1,37 @@
 .descriptions {
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    margin: 1rem auto;
-  }
+  & .mainsection {
+    &__therapies {
+      & .mainsection__block__box {
+        margin: 2rem auto;
 
-  p {
-    margin: 2rem auto;
-  }
-
-  @media screen and (min-width: 1024px) {
-    margin: 6rem auto;
-  }
-
-  &__block {
-    margin: 2rem auto;
-
-    &__box {
-      padding: 1.5rem;
-      border-radius: 2rem;
-      border: 1px solid $white;
-      margin: 2rem auto;
-
-      &__list {
-        list-style-type: square;
-
-        li {
-          margin: 1rem auto;
+        @media screen and (min-width: 768px) {
+          margin: 4rem auto;
         }
       }
     }
-  }
-  & > .img-placeholder {
-    width: 100%;
-    height: auto;
 
-    & img {
-      width: 100%;
-      height: auto;
-      object-fit: cover;
+    &__block__box {
+      border-radius: 1rem;
+      border: 1px solid $white;
+      padding: 1rem;
+      margin: 2rem auto;
+
+      h3 {
+        margin: 2rem auto;
+      }
+
+      &__list {
+        margin: 2rem 0 2rem 2rem;
+
+        li {
+          margin: 0.5rem auto;
+        }
+      }
+
+      strong {
+        text-align: center;
+        display: block;
+      }
     }
   }
 }
