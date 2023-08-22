@@ -18,6 +18,7 @@ function initApp() {
   initAos();
   initSwiper();
   initNavigation();
+  initBtnShowInfo();
 
   function initAos() {
     try {
@@ -99,6 +100,37 @@ function initApp() {
     });
 
     window.addEventListener("scroll", changeNavColor);
+  }
+
+  function initBtnShowInfo() {
+    console.log("ddd");
+    const contactSection = document.querySelector("#contact");
+    if (!contactSection) return;
+
+    contactSection.addEventListener("click", (e) => {
+      if (!(e.target instanceof Element)) return;
+      if (!e.target.classList.contains("contact-btn")) return;
+
+      const closestSquare = e.target.closest(".contact__square__info");
+      if (!closestSquare) return;
+
+      e.target.classList.add("contact-btn-hidden");
+
+      const phone1 = closestSquare.querySelector(".phone-number1");
+      if (phone1) {
+        phone1.innerHTML = "+48 570 190 884";
+      }
+
+      const phone2 = closestSquare.querySelector(".phone-number2");
+      if (phone2) {
+        phone2.innerHTML = "+48 789 049 495";
+      }
+
+      const email = closestSquare.querySelector(".email-address");
+      if (email) {
+        email.innerHTML = "dd.bezpiecznaprzystan@gmail.com";
+      }
+    });
   }
 }
 

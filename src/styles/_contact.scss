@@ -37,6 +37,24 @@
       }
 
       &__info {
+        & .contact-btn {
+          color: $white;
+          background-color: transparent;
+          border: 1px solid $white;
+          padding: 0.4rem 2rem;
+          cursor: pointer;
+          border-radius: 1rem;
+          transition: 0.5s;
+
+          &:hover {
+            background-color: $white;
+            color: $graphite;
+          }
+
+          &-hidden {
+            transform: scale(0);
+          }
+        }
         p {
           font-weight: bold;
 
