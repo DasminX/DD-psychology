@@ -15,6 +15,14 @@
 
   &.scrolled {
     background-color: $graphite;
+
+    & .nav__list {
+      li {
+        a.current-tab {
+          color: $brass;
+        }
+      }
+    }
   }
 
   &__toggle {
@@ -74,7 +82,7 @@
         transition: 0.3s;
 
         &.current-tab {
-          color: $brass;
+          color: $graphite;
         }
       }
 
