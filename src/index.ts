@@ -118,12 +118,12 @@ function initApp() {
 
       const phone1 = closestSquare.querySelector(".phone-number1");
       if (phone1) {
-        phone1.innerHTML = "+48 570 190 884";
+        phone1.innerHTML = "+48 789 049 495";
       }
 
       const phone2 = closestSquare.querySelector(".phone-number2");
       if (phone2) {
-        phone2.innerHTML = "+48 789 049 495";
+        phone2.innerHTML = "+48 570 190 884";
       }
 
       const email = closestSquare.querySelector(".email-address");

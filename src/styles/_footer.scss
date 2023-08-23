@@ -17,6 +17,39 @@
     @include mq-land(tablet) {
       width: 50%;
     }
+
+    & li a {
+      transition: 0.3s;
+    }
+
+    @media screen and (min-width: 1024px) {
+      & li:hover a {
+        color: $brass;
+      }
+    }
+  }
+
+  .footer__company {
+    list-style-type: none;
+    font-size: 90%;
+    @include flex(column, space-around, flex-start);
+    width: 50%;
+    min-height: 8em;
+
+    @media screen and (min-width: 768px) {
+      @include flex(column, space-around, center);
+    }
+
+    @include mq(tablet) {
+      width: 50%;
+    }
+    @include mq-land(tablet) {
+      width: 50%;
+    }
+
+    li {
+      margin-bottom: 0.25rem;
+    }
   }
 
   .footer__copy {

@@ -7,7 +7,7 @@
     "src/index.html"
   ],
   "scripts": {
-    "start": "parcel src/index.html src/about-us/index.html src/descriptions/index.html src/privacy-policy/index.html",
+    "start": "parcel src/index.html src/o-nas/index.html src/uslugi/index.html src/cennik/index.html src/polityka-prywatnosci/index.html",
     "build": "parcel build src/**/*.html src/styles.scss src/index.ts"
   },
   "keywords": [

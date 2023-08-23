@@ -1,0 +1,32 @@
+.pricing {
+  & .mainsection {
+    & .mainsection__block__box {
+      margin: 2rem auto;
+
+      @media screen and (min-width: 1024px) {
+        margin: 4rem auto;
+      }
+    }
+
+    &__block__box {
+      border-radius: 1rem;
+      border: 1px solid $white;
+      padding: 1rem;
+      margin: 2rem auto;
+
+      .description {
+        border-left: 0.2rem solid white;
+      }
+
+      strong {
+        margin-left: 1rem;
+        text-align: left;
+        display: block;
+
+        &.thin {
+          font-weight: 400;
+        }
+      }
+    }
+  }
+}
