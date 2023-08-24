@@ -16,7 +16,7 @@ if (Array.isArray(presentationals) && presentationals.length > 0) {
 
 function initApp() {
   initAos();
-  initSwiper();
+  // initSwiper();
   initNavigation();
   initBtnShowInfo();
 
@@ -28,7 +28,7 @@ function initApp() {
     } catch (e) {}
   }
 
-  function initSwiper() {
+  /*   function initSwiper() {
     try {
       if (typeof Swiper === "function") {
         const swiperCont = document.querySelector(".swiper") as unknown as HTMLDivElement;
@@ -47,26 +47,13 @@ function initApp() {
         });
       }
     } catch (e) {}
-  }
+  } */
 
   function initNavigation() {
     const nav = document.querySelector(".nav") as unknown as HTMLElement;
     const navToggle = document.querySelector(".nav__toggle") as unknown as HTMLDivElement;
     const navList = document.querySelector(".nav__list") as unknown as HTMLUListElement;
     if (!nav || !navToggle || !navList) return; // set desktop view
-    highlightNavLink();
-
-    function highlightNavLink() {
-      try {
-        const { pathname } = location;
-        const idSelector = pathname.slice(1).trim().replace(/[/#]/gi, "") || "home";
-        const cont = navList.querySelector(`#navitem-${idSelector}`);
-        if (!cont) return;
-        cont.classList.add("current-tab");
-      } catch (e) {
-        console.warn(e);
-      }
-    }
 
     function changeNavColor() {
       if (nav.classList.contains("nav__active")) {
@@ -103,7 +90,6 @@ function initApp() {
   }
 
   function initBtnShowInfo() {
-    console.log("ddd");
     const contactSection = document.querySelector("#contact");
     if (!contactSection) return;
 
