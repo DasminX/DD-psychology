@@ -28,9 +28,11 @@
   "author": "DasminX",
   "license": "ISC",
   "devDependencies": {
+    "@parcel/compressor-gzip": "^2.9.3",
     "@parcel/transformer-sass": "^2.9.3",
     "@rbf/parcel-optimizer-javascript-obfuscator": "^0.2.2",
     "parcel": "^2.9.3",
+    "sharp": "^0.31.3",
     "typescript": "^5.1.6"
   },
   "dependencies": {
