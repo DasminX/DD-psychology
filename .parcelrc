@@ -5,11 +5,5 @@
       "...",
       "@rbf/parcel-optimizer-javascript-obfuscator"
     ]
-  },
-  "compressors": {
-    "*.{html,css,js,svg,map}": [
-      "...",
-      "@parcel/compressor-gzip"
-    ]
   }
 }

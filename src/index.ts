@@ -1,19 +1,3 @@
-/* // import Swiper JS
-import Swiper from "swiper";
-// import Swiper styles
-// import "swiper/css"; */
-
-/*   const presentationals = Array.from(
-  document.querySelectorAll("p[class*='__presentation__']")
-) as HTMLParagraphElement[];
-if (Array.isArray(presentationals) && presentationals.length > 0) {
-  for (let i = 0; i < presentationals.length; i++) {
-    presentationals[i].dataset.aos = "fade-right";
-    presentationals[i].dataset.aosDuration = "550";
-    presentationals[i].classList.add("aos-init");
-  }
-} */
-
 function initApp() {
   initAos();
   // initSwiper();
