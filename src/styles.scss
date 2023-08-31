@@ -6,7 +6,7 @@
 
 // /index.html
 @import "styles/_header";
-@import "styles/opinions";
+@import "styles/_opinions";
 @import "styles/_contact";
 @import "styles/_footer";
 
@@ -14,6 +14,7 @@
 @import "styles/_aboutus";
 
 // descriptions/index.html
-@import "styles/descriptions";
+@import "styles/_descriptions";
 
-@import "styles/pricing";
+@import "styles/_pricing";
+@import "styles/privacypol";

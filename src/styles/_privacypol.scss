@@ -1,0 +1,19 @@
+#privacy-policy-section {
+  .textblock {
+    margin: 4rem auto;
+
+    ul {
+      margin-left: 1rem;
+      list-style-type: disc;
+
+      li {
+        margin: 0.25rem auto;
+      }
+
+      ul {
+        list-style-type: circle;
+        margin-left: 2rem;
+      }
+    }
+  }
+}
