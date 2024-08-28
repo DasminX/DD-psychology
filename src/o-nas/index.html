@@ -1,103 +1,71 @@
 <!DOCTYPE html>
 <html lang="pl">
-  <head>
-    <!-- META -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="google-site-verification" content="Svdl6t_Sje2On7p425w9pkTzyfzAnRhcyQOC19Gv4Ek" />
-    <meta
-      title="D&D Bezpieczna Przystań - Gabinet Psychologiczny"
-      content="D&D Bezpieczna Przystań - Gabinet Psychologiczny Dominika Jazowska i Dominika Wąchadło S.C."
-    />
-    <meta
-      name="description"
-      content="D&D Bezpieczna Przystań - Gabinet Psychologiczny został stworzony przez dwie doświadczone psycholożki - Dominikę Jazowską i Dominikę Wąchadło. W tej secji można dowiedzieć się więcej na temat obu pań."
-    />
-    <meta
-      name="keywords"
-      content="ddbezpiecznaprzystan,dd,bezpieczna,przystań,D&D,Bezpieczna,Przystań,doświadczony,psycholog,śląsk,Dąbrowa,Górnicza,Jaworzno,dla,dzieci,nastolatka,nastolatki,dorosłych,gabinet,psychologiczny,Dominika,Jazowska,Wąchadło,Rejtana 20,pomoc,psychologa,psychologiczna"
-    />
-    <meta property="og:locale" content="pl_PL" />
-    <meta property="og:site_name" content="D&D Bezpieczna Przystań" />
-    <meta property="og:title" content="Gabinet Psychologiczny D&D Bezpieczna Przystań - O Nas" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://www.ddbezpiecznaprzystan.pl/o-nas" />
 
-    <!-- LINK -->
-    <link rel="icon" type="image/png" sizes="16x16" href="../static/assets/favicon.png" />
-    <link rel="canonical" href="https://ddbezpiecznaprzystan.pl/o-nas" />
-    <link rel="dns-prefetch" href="//cdnjs.cloudflare.com" />
-    <link rel="dns-prefetch" href="//unpkg.com" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <link rel="stylesheet" href="../styles.scss" />
+<head>
+  <!-- META -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="google-site-verification" content="Svdl6t_Sje2On7p425w9pkTzyfzAnRhcyQOC19Gv4Ek" />
+  <meta title="D&D Bezpieczna Przystań - Gabinet Psychologiczny"
+    content="D&D Bezpieczna Przystań - Gabinet Psychologiczny Dominika Szpila i Dominika Wąchadło S.C." />
+  <meta name="description"
+    content="D&D Bezpieczna Przystań - Gabinet Psychologiczny został stworzony przez dwie doświadczone psycholożki - Dominikę Jazowską i Dominikę Wąchadło. W tej secji można dowiedzieć się więcej na temat obu pań." />
+  <meta name="keywords"
+    content="ddbezpiecznaprzystan,dd,bezpieczna,przystań,D&D,Bezpieczna,Przystań,doświadczony,psycholog,śląsk,Dąbrowa,Górnicza,Jaworzno,dla,dzieci,nastolatka,nastolatki,dorosłych,gabinet,psychologiczny,Dominika,Szpila,Wąchadło,Rejtana 20,pomoc,psychologa,psychologiczna" />
+  <meta property="og:locale" content="pl_PL" />
+  <meta property="og:site_name" content="D&D Bezpieczna Przystań" />
+  <meta property="og:title" content="Gabinet Psychologiczny D&D Bezpieczna Przystań - O Nas" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.ddbezpiecznaprzystan.pl/o-nas" />
 
-    <!-- SCRIPT -->
-    <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script
-      defer
-      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"
-      integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script defer type="module" src="../index.ts"></script>
-    <title>Gabinet Psychologiczny D&D Bezpieczna Przystań - O Nas</title>
-  </head>
-  <body>
-    <nav class="nav">
-      <div class="nav__toggle">
-        <i id="bars" class="fa-solid fa-bars"></i>
-        <i id="xmark" class="fa-solid fa-xmark hidden"></i>
-      </div>
-      <ul class="nav__list">
-        <li class="nav__item">
-          <a
-            title="Strona główna D&D Bezpieczna Przystań - Gabinet Psychologiczny"
-            aria-label="Link do strony głównej D&D Bezpieczna Przystań - Gabinet Psychologiczny"
-            id="navitem-home"
-            href="/"
-            class="nav__link nav__link--color"
-            >Strona Główna</a
-          >
-        </li>
-        <li class="nav__item">
-          <a
-            title="Sekcja opisująca psycholożki D&D Bezpieczna Przystań - Gabinet Psychologiczny"
-            aria-label="Link do sekcji opisującej psycholożki D&D Bezpieczna Przystań - Gabinet Psychologiczny"
-            id="navitem-o-nas"
-            href="#"
-            class="nav__link current-tab"
-            >O nas</a
-          >
-        </li>
-        <li class="nav__item">
-          <a
-            title="Opis usług realizowanych przez D&D Bezpieczna Przystań - Gabinet Psychologiczny"
-            aria-label="Link do opisu usług realizowanych przez D&D Bezpieczna Przystań - Gabinet Psychologiczny"
-            id="navitem-uslugi"
-            href="/uslugi"
-            class="nav__link"
-            >Nasze usługi</a
-          >
-        </li>
-        <li class="nav__item">
-          <a
-            title="Cennik usług realizowanych przez D&D Bezpieczna Przystań - Gabinet Psychologiczny"
-            aria-label="Link do cennika usług realizowanych przez D&D Bezpieczna Przystań - Gabinet Psychologiczny"
-            id="navitem-cennik"
-            href="/cennik"
-            class="nav__link"
-            >Cennik</a
-          >
-        </li>
-        <!--         <li class="nav__item">
+  <!-- LINK -->
+  <link rel="icon" type="image/png" sizes="16x16" href="../static/assets/favicon.png" />
+  <link rel="canonical" href="https://ddbezpiecznaprzystan.pl/o-nas" />
+  <link rel="dns-prefetch" href="//cdnjs.cloudflare.com" />
+  <link rel="dns-prefetch" href="//unpkg.com" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles.scss" />
+
+  <!-- SCRIPT -->
+  <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"
+    integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script defer type="module" src="../index.ts"></script>
+  <title>Gabinet Psychologiczny D&D Bezpieczna Przystań - O Nas</title>
+</head>
+
+<body>
+  <nav class="nav">
+    <div class="nav__toggle">
+      <i id="bars" class="fa-solid fa-bars"></i>
+      <i id="xmark" class="fa-solid fa-xmark hidden"></i>
+    </div>
+    <ul class="nav__list">
+      <li class="nav__item">
+        <a title="Strona główna D&D Bezpieczna Przystań - Gabinet Psychologiczny"
+          aria-label="Link do strony głównej D&D Bezpieczna Przystań - Gabinet Psychologiczny" id="navitem-home"
+          href="/" class="nav__link nav__link--color">Strona Główna</a>
+      </li>
+      <li class="nav__item">
+        <a title="Sekcja opisująca psycholożki D&D Bezpieczna Przystań - Gabinet Psychologiczny"
+          aria-label="Link do sekcji opisującej psycholożki D&D Bezpieczna Przystań - Gabinet Psychologiczny"
+          id="navitem-o-nas" href="#" class="nav__link current-tab">O nas</a>
+      </li>
+      <li class="nav__item">
+        <a title="Opis usług realizowanych przez D&D Bezpieczna Przystań - Gabinet Psychologiczny"
+          aria-label="Link do opisu usług realizowanych przez D&D Bezpieczna Przystań - Gabinet Psychologiczny"
+          id="navitem-uslugi" href="/uslugi" class="nav__link">Nasze usługi</a>
+      </li>
+      <li class="nav__item">
+        <a title="Cennik usług realizowanych przez D&D Bezpieczna Przystań - Gabinet Psychologiczny"
+          aria-label="Link do cennika usług realizowanych przez D&D Bezpieczna Przystań - Gabinet Psychologiczny"
+          id="navitem-cennik" href="/cennik" class="nav__link">Cennik</a>
+      </li>
+      <!--         <li class="nav__item">
           <a
             title="Opinie o D&D Bezpieczna Przystań - Gabinet Psychologiczny"
             aria-label="Link do opinii o D&D Bezpieczna Przystań - Gabinet Psychologiczny"
@@ -107,331 +75,172 @@
             >Opinie</a
           >
         </li> -->
-        <li class="nav__item">
-          <a
-            title="Kontakt z D&D Bezpieczna Przystań - Gabinet Psychologiczny"
-            aria-label="Link do kontaktu z D&D Bezpieczna Przystań - Gabinet Psychologiczny"
-            id="navitem-contact"
-            href="/#contact"
-            class="nav__link"
-            >Kontakt</a
-          >
-        </li>
-        <li class="nav__item">
-          <div class="nav__item--socials">
-            <a
-              href="https://instagram.com/dd.bezpiecznaprzystan"
-              target="_blank"
-              id="nav-instagram"
-              class="nav__link"
-              title="Profil D&D Bezpieczna Przystań - Gabinet Psychologiczny w serwisie Instagram"
-              aria-label="Link do profilu D&D Bezpieczna Przystań - Gabinet Psychologiczny w serwisie Instagram"
-              ><i class="fa-brands fa-instagram"></i
-            ></a>
-            <a
-              href="https://www.facebook.com/profile.php?id=61550618512601"
-              target="_blank"
-              id="nav-facebook"
-              class="nav__link"
-              title="Profil D&D Bezpieczna Przystań - Gabinet Psychologiczny w serwisie Facebook"
-              aria-label="Link do profilu D&D Bezpieczna Przystań - Gabinet Psychologiczny w serwisie Facebook"
-              ><i class="fa-brands fa-facebook"></i
-            ></a>
-          </div>
-        </li>
-      </ul>
-    </nav>
-
-    <div id="mainContainer" class="mainContainer">
-      <section id="aboutus" class="mainsection aboutus">
-        <h1>Kim jesteśmy?</h1>
-        <div class="mainsection__presentation">
-          <div
-            data-aos="fade-down"
-            data-aos-once="true"
-            data-aos-offset="150"
-            data-aos-duration="500"
-            class="img-placeholder"
-          >
-            <h2 class="mainsection__presentation__header">
-              <strong>Dominika Jazowska</strong>
-            </h2>
-            <picture>
-              <source
-                width="100%"
-                height="100%"
-                media="(max-width:600px)"
-                srcset="../static/assets/domcia-solo-mob.jpg?as=webp"
-                alt="Psycholog Dominika Jazowska"
-                type="image/webp"
-              />
-              <source
-                width="100%"
-                height="100%"
-                media="(min-width:601px)"
-                srcset="../static/assets/domcia-solo.jpg?as=webp"
-                alt="Psycholog Dominika Jazowska"
-                type="image/webp"
-              />
-              <img
-                width="100%"
-                height="100%"
-                src="../static/assets/domcia-solo.jpg?as=webp"
-                alt="Psycholog Dominika Jazowska"
-              />
-            </picture>
-          </div>
-          <div data-aos="fade-up" data-aos-once="true" data-aos-offset="150" data-aos-duration="500" class="textblock">
-            <p
-              data-aos="fade-up"
-              data-aos-once="true"
-              data-aos-offset="150"
-              data-aos-duration="500"
-              class="description"
-            >
-              Witaj, zanim Ty zdecydujesz opowiedzieć mi coś o sobie, ja przedstawię się Tobie.
-            </p>
-            <p
-              data-aos="fade-up"
-              data-aos-once="true"
-              data-aos-offset="150"
-              data-aos-duration="500"
-              class="description"
-            >
-              Na imię mam Dominika i jestem Magistrem Psychologii o specjalności klinicznej oraz Trenerem Umiejętności
-              Społecznych dzieci i młodzieży. Ukończyłam także kurs prowadzenia bajkoterapii oraz Holistycznej Terapii
-              Dzieci i Młodzieży z Zaburzeniami Lękowymi.
-            </p>
-            <p
-              data-aos="fade-up"
-              data-aos-once="true"
-              data-aos-offset="150"
-              data-aos-duration="500"
-              class="description"
-            >
-              Rozpoczęłam także studia podyplomowe z zakresu przygotowania pedagogicznego oraz psychologii kryzysu,
-              pomocy psychologicznej i interwencji kryzysowej.
-            </p>
-            <p
-              data-aos="fade-up"
-              data-aos-once="true"
-              data-aos-offset="150"
-              data-aos-duration="500"
-              class="description"
-            >
-              Swoje doświadczenie zawodowe zdobywałam w przedszkolach specjalnych i integracyjnych oraz w szkołach
-              podstawowych, a także w gabinecie psychologicznym pod okiem doświadczonych psychologów i psychoterapeutów.
-            </p>
-            <p
-              data-aos="fade-up"
-              data-aos-once="true"
-              data-aos-offset="150"
-              data-aos-duration="500"
-              class="description"
-            >
-              Człowiek jest dla mnie wciąż nieodgadnioną zagadką, na którą składają się procesy emocjonalne, społeczne i
-              rozwojowe. Dzięki temu to właśnie druga osoba jest dla mnie największą motywacją do działania i
-              poszerzenia swoich kompetencji w celu niesienia pomocy i wsparcia tym, którzy go potrzebują.
-            </p>
-          </div>
-          <div class="textblock extend">
-            <p
-              data-aos="fade-up"
-              data-aos-once="true"
-              data-aos-offset="150"
-              data-aos-duration="500"
-              class="description"
-            >
-              Jestem dobrym partnerem do rozmowy, uwielbiam słuchać. Jestem osobą empatyczną, zaangażowaną w wykonywaną
-              pracę, kreatywną i troskliwą. W pracy kieruję się poczuciem bezpieczeństwa, zaufania i komfortu mojego
-              pacjenta, a także podejściem systemowym, w którym traktuje rodzinę jako złożoną całość. Dzięki temu
-              wsparciem otaczam nie tylko swojego pacjenta, ale także jego bliskich.
-            </p>
-
-            <p
-              data-aos="fade-up"
-              data-aos-once="true"
-              data-aos-offset="150"
-              data-aos-duration="500"
-              class="description"
-            >
-              Prywatnie uwielbiam podróżować, poznawać innych ludzi i ich kulturę. Uwielbiam długie spacery, jazdę na
-              rolkach i na rowerze. Jestem miłośniczką długich powieści oraz filmów. Łączę w sobie dwa żywioły - wodę i
-              ogień. Na co dzień jestem oazą spokoju, opanowania i cierpliwości, żeby w odpowiednim momencie rozpalić
-              ogień kreatywności i zarażać innych pozytywną energią oraz uśmiechem.
-            </p>
-          </div>
+      <li class="nav__item">
+        <a title="Kontakt z D&D Bezpieczna Przystań - Gabinet Psychologiczny"
+          aria-label="Link do kontaktu z D&D Bezpieczna Przystań - Gabinet Psychologiczny" id="navitem-contact"
+          href="/#contact" class="nav__link">Kontakt</a>
+      </li>
+      <li class="nav__item">
+        <div class="nav__item--socials">
+          <a href="https://instagram.com/dd.bezpiecznaprzystan" target="_blank" id="nav-instagram" class="nav__link"
+            title="Profil D&D Bezpieczna Przystań - Gabinet Psychologiczny w serwisie Instagram"
+            aria-label="Link do profilu D&D Bezpieczna Przystań - Gabinet Psychologiczny w serwisie Instagram"><i
+              class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.facebook.com/profile.php?id=61550618512601" target="_blank" id="nav-facebook"
+            class="nav__link" title="Profil D&D Bezpieczna Przystań - Gabinet Psychologiczny w serwisie Facebook"
+            aria-label="Link do profilu D&D Bezpieczna Przystań - Gabinet Psychologiczny w serwisie Facebook"><i
+              class="fa-brands fa-facebook"></i></a>
         </div>
-        <div class="mainsection__presentation">
-          <div
-            data-aos="fade-down"
-            data-aos-once="true"
-            data-aos-offset="150"
-            data-aos-duration="500"
-            class="img-placeholder"
-          >
-            <h2 class="mainsection__presentation__header">
-              <strong>Dominika Wąchadło</strong>
-            </h2>
-            <picture>
-              <source
-                width="100%"
-                height="100%"
-                media="(max-width:600px)"
-                srcset="../static/assets/domi-solo-mob.jpg?as=webp"
-                alt="Psycholog Dominika Wąchadło"
-                type="image/webp"
-              />
-              <source
-                width="100%"
-                height="100%"
-                media="(min-width:601px)"
-                srcset="../static/assets/domi-solo.jpg?as=webp"
-                alt="Psycholog Dominika Wąchadło"
-                type="image/webp"
-              />
-              <img
-                width="100%"
-                height="100%"
-                src="../static/assets/domi-solo.jpg?as=webp"
-                alt="Psycholog Dominika Wąchadło"
-                loading="lazy"
-              />
-            </picture>
-          </div>
-          <div class="textblock">
-            <p
-              data-aos="fade-up"
-              data-aos-once="true"
-              data-aos-offset="150"
-              data-aos-duration="500"
-              class="description"
-            >
-              Mam na imię Dominika i jestem psycholożką, pedagożką i Trenerką Umiejętności Społecznych dzieci i
-              młodzieży.
-            </p>
-            <p
-              data-aos="fade-up"
-              data-aos-once="true"
-              data-aos-offset="150"
-              data-aos-duration="500"
-              class="description"
-            >
-              Ukończyłam jednolite studia magisterskie z zakresu psychologii, ze specjalnością kliniczną oraz studia
-              podyplomowe ze wspierania i edukacji osób ze spektrum autyzmu i przygotowania pedagogicznego oraz
-              uczestniczyłam w szkoleniu Treningu Umiejętności Społecznych.
-            </p>
-            <p
-              data-aos="fade-up"
-              data-aos-once="true"
-              data-aos-offset="150"
-              data-aos-duration="500"
-              class="description"
-            >
-              Brałam również udział w różnorodnych szkoleniach, poszerzających moją wiedzę i kompetencje, m.in. w
-              obszarze regulacji emocji dzieci i młodzieży, terapii mutyzmu selektywnego w podejściu
-              poznawczo-behawioralnym, problemowych zachowań seksualnych w dzieciństwie, samouszkodzeń, metod pracy z
-              ADHD, poznawczo-behawioralnych metod pracy w zaburzeniach lękowych, posiadam tytuł praktyka metody
-              "Kids'Skills- Dam radę!" oraz "Jestem z Ciebie dumny!".
-            </p>
-            <p
-              data-aos="fade-up"
-              data-aos-once="true"
-              data-aos-offset="150"
-              data-aos-duration="500"
-              class="description"
-            >
-              Doświadczenie zawodowe zdobywałam pracując w oświacie, Fundacji Wsparcia Psychologicznego oraz gabinecie
-              psychologicznym, pracując pod okiem doświadczonych psychologów i psychoterapeutów.
-            </p>
-          </div>
-          <div class="textblock extend">
-            <p
-              data-aos="fade-up"
-              data-aos-once="true"
-              data-aos-offset="150"
-              data-aos-duration="500"
-              class="description"
-            >
-              Nieustannie podnoszę swoje kwalifikacje, aby wspierać i pomagać najlepiej jak potrafię, uczestnicząc w
-              kolejnych szkoleniach, spotkaniach i webinarach, a swoją pracę poddaję regularnej superwizji.
-            </p>
-            <p
-              data-aos="fade-up"
-              data-aos-once="true"
-              data-aos-offset="150"
-              data-aos-duration="500"
-              class="description"
-            >
-              W gabinecie współpracuję z dziećmi, młodzieżą oraz młodymi dorosłymi.
-            </p>
-            <p
-              data-aos="fade-up"
-              data-aos-once="true"
-              data-aos-offset="150"
-              data-aos-duration="500"
-              class="description"
-            >
-              Od zawsze człowiek był dla mnie skarbnicą, składającą się z ogromnej ilości emocji, przeżyć, doświadczeń,
-              które starałam się zrozumieć, zamiast oceniać. Ktoś kiedyś powiedział, że kiedy pozwolimy człowiekowi być
-              sobą, zaczyna dziać się magia - w pełni się z tym zgadzam i kieruje się tym, zarówno w życiu, jak i pracy.
-            </p>
-            <p
-              data-aos="fade-up"
-              data-aos-once="true"
-              data-aos-offset="150"
-              data-aos-duration="500"
-              class="description"
-            >
-              Pomoc drugiemu człowiekowi była dla mnie ważna odkąd pamiętam, a zawód psychologa jest spełnieniem jednego
-              z moich marzeń. Studia, szkolenia i kursy natomiast dają mi narzędzia, abym mogła wspierać i pomagać oraz
-              robić to efektywnie.
-            </p>
-            <p
-              data-aos="fade-up"
-              data-aos-once="true"
-              data-aos-offset="150"
-              data-aos-duration="500"
-              class="description"
-            >
-              W relacji zarówno z dzieckiem, rodzicem, jak i osobą dorosłą przede wszystkim kieruje się dobrem klienta,
-              ważna jest dla mnie atmosfera bezpieczeństwa, otwartości i uważności.
-            </p>
-            <p
-              data-aos="fade-up"
-              data-aos-once="true"
-              data-aos-offset="150"
-              data-aos-duration="500"
-              class="description"
-            >
-              Prywatnie jestem miłośniczką długich rozmów, komedii romantycznych i polskich gór, mam fantastycznych
-              przyjaciół, mnóstwo energii do działania i sto pomysłów na minutę.
-            </p>
-          </div>
-        </div>
-      </section>
-    </div>
+      </li>
+    </ul>
+  </nav>
 
-    <footer class="footer">
-      <div class="footer__copy">
-        <p class="footer__text">D&D - Bezpieczna Przystań.</p>
+  <div id="mainContainer" class="mainContainer">
+    <section id="aboutus" class="mainsection aboutus">
+      <h1>Kim jesteśmy?</h1>
+      <div class="mainsection__presentation">
+        <div data-aos="fade-down" data-aos-once="true" data-aos-offset="150" data-aos-duration="500"
+          class="img-placeholder">
+          <h2 class="mainsection__presentation__header">
+            <strong>Dominika Szpila</strong>
+          </h2>
+          <picture>
+            <source width="100%" height="100%" media="(max-width:600px)"
+              srcset="../static/assets/domcia-solo-mob.jpg?as=webp" alt="Psycholog Dominika Szpila" type="image/webp" />
+            <source width="100%" height="100%" media="(min-width:601px)"
+              srcset="../static/assets/domcia-solo.jpg?as=webp" alt="Psycholog Dominika Szpila" type="image/webp" />
+            <img width="100%" height="100%" src="../static/assets/domcia-solo.jpg?as=webp"
+              alt="Psycholog Dominika Szpila" />
+          </picture>
+        </div>
+        <div data-aos="fade-up" data-aos-once="true" data-aos-offset="150" data-aos-duration="500" class="textblock">
+          <p data-aos="fade-up" data-aos-once="true" data-aos-offset="150" data-aos-duration="500" class="description">
+            Witaj, zanim Ty zdecydujesz opowiedzieć mi coś o sobie, ja przedstawię się Tobie.
+          </p>
+          <p data-aos="fade-up" data-aos-once="true" data-aos-offset="150" data-aos-duration="500" class="description">
+            Na imię mam Dominika i jestem Magistrem Psychologii o specjalności klinicznej oraz Trenerem Umiejętności
+            Społecznych dzieci i młodzieży. Ukończyłam także kurs prowadzenia bajkoterapii oraz Holistycznej Terapii
+            Dzieci i Młodzieży z Zaburzeniami Lękowymi.
+          </p>
+          <p data-aos="fade-up" data-aos-once="true" data-aos-offset="150" data-aos-duration="500" class="description">
+            Rozpoczęłam także studia podyplomowe z zakresu przygotowania pedagogicznego oraz psychologii kryzysu,
+            pomocy psychologicznej i interwencji kryzysowej.
+          </p>
+          <p data-aos="fade-up" data-aos-once="true" data-aos-offset="150" data-aos-duration="500" class="description">
+            Swoje doświadczenie zawodowe zdobywałam w przedszkolach specjalnych i integracyjnych oraz w szkołach
+            podstawowych, a także w gabinecie psychologicznym pod okiem doświadczonych psychologów i psychoterapeutów.
+          </p>
+          <p data-aos="fade-up" data-aos-once="true" data-aos-offset="150" data-aos-duration="500" class="description">
+            Człowiek jest dla mnie wciąż nieodgadnioną zagadką, na którą składają się procesy emocjonalne, społeczne i
+            rozwojowe. Dzięki temu to właśnie druga osoba jest dla mnie największą motywacją do działania i
+            poszerzenia swoich kompetencji w celu niesienia pomocy i wsparcia tym, którzy go potrzebują.
+          </p>
+        </div>
+        <div class="textblock extend">
+          <p data-aos="fade-up" data-aos-once="true" data-aos-offset="150" data-aos-duration="500" class="description">
+            Jestem dobrym partnerem do rozmowy, uwielbiam słuchać. Jestem osobą empatyczną, zaangażowaną w wykonywaną
+            pracę, kreatywną i troskliwą. W pracy kieruję się poczuciem bezpieczeństwa, zaufania i komfortu mojego
+            pacjenta, a także podejściem systemowym, w którym traktuje rodzinę jako złożoną całość. Dzięki temu
+            wsparciem otaczam nie tylko swojego pacjenta, ale także jego bliskich.
+          </p>
+
+          <p data-aos="fade-up" data-aos-once="true" data-aos-offset="150" data-aos-duration="500" class="description">
+            Prywatnie uwielbiam podróżować, poznawać innych ludzi i ich kulturę. Uwielbiam długie spacery, jazdę na
+            rolkach i na rowerze. Jestem miłośniczką długich powieści oraz filmów. Łączę w sobie dwa żywioły - wodę i
+            ogień. Na co dzień jestem oazą spokoju, opanowania i cierpliwości, żeby w odpowiednim momencie rozpalić
+            ogień kreatywności i zarażać innych pozytywną energią oraz uśmiechem.
+          </p>
+        </div>
       </div>
-      <ul class="footer__list">
-        <li><a href="#">Do góry</a></li>
-        <li><a href="/">Strona główna</a></li>
-        <li><a href="/uslugi">Nasze usługi</a></li>
-        <li><a href="/cennik">Cennik</a></li>
-        <li><a href="/polityka-prywatnosci">Polityka prywatności</a></li>
-      </ul>
-      <br />
-      <br />
-      <ul class="footer__company">
-        <li><strong>Dane firmy:</strong></li>
-        <li><strong>Nazwa:</strong> D&D Bezpieczna Przystań s.c. Dominika Jazowska, Dominika Wąchadło</li>
-        <li><strong>Adres firmy:</strong> ul. Rejtana 20 41-300 Dąbrowa Górnicza</li>
-        <li><strong>NIP:</strong> 6292508842</li>
-        <li><strong>REGON:</strong> 526125562</li>
-      </ul>
-    </footer>
-  </body>
+      <div class="mainsection__presentation">
+        <div data-aos="fade-down" data-aos-once="true" data-aos-offset="150" data-aos-duration="500"
+          class="img-placeholder">
+          <h2 class="mainsection__presentation__header">
+            <strong>Dominika Wąchadło</strong>
+          </h2>
+          <picture>
+            <source width="100%" height="100%" media="(max-width:600px)"
+              srcset="../static/assets/domi-solo-mob.jpg?as=webp" alt="Psycholog Dominika Wąchadło" type="image/webp" />
+            <source width="100%" height="100%" media="(min-width:601px)" srcset="../static/assets/domi-solo.jpg?as=webp"
+              alt="Psycholog Dominika Wąchadło" type="image/webp" />
+            <img width="100%" height="100%" src="../static/assets/domi-solo.jpg?as=webp"
+              alt="Psycholog Dominika Wąchadło" loading="lazy" />
+          </picture>
+        </div>
+        <div class="textblock">
+          <p data-aos="fade-up" data-aos-once="true" data-aos-offset="150" data-aos-duration="500" class="description">
+            Mam na imię Dominika i jestem psycholożką, pedagożką i Trenerką Umiejętności Społecznych dzieci i
+            młodzieży.
+          </p>
+          <p data-aos="fade-up" data-aos-once="true" data-aos-offset="150" data-aos-duration="500" class="description">
+            Ukończyłam jednolite studia magisterskie z zakresu psychologii, ze specjalnością kliniczną oraz studia
+            podyplomowe ze wspierania i edukacji osób ze spektrum autyzmu i przygotowania pedagogicznego oraz
+            uczestniczyłam w szkoleniu Treningu Umiejętności Społecznych.
+          </p>
+          <p data-aos="fade-up" data-aos-once="true" data-aos-offset="150" data-aos-duration="500" class="description">
+            Brałam również udział w różnorodnych szkoleniach, poszerzających moją wiedzę i kompetencje, m.in. w
+            obszarze regulacji emocji dzieci i młodzieży, terapii mutyzmu selektywnego w podejściu
+            poznawczo-behawioralnym, problemowych zachowań seksualnych w dzieciństwie, samouszkodzeń, metod pracy z
+            ADHD, poznawczo-behawioralnych metod pracy w zaburzeniach lękowych, posiadam tytuł praktyka metody
+            "Kids'Skills- Dam radę!" oraz "Jestem z Ciebie dumny!".
+          </p>
+          <p data-aos="fade-up" data-aos-once="true" data-aos-offset="150" data-aos-duration="500" class="description">
+            Doświadczenie zawodowe zdobywałam pracując w oświacie, Fundacji Wsparcia Psychologicznego oraz gabinecie
+            psychologicznym, pracując pod okiem doświadczonych psychologów i psychoterapeutów.
+          </p>
+        </div>
+        <div class="textblock extend">
+          <p data-aos="fade-up" data-aos-once="true" data-aos-offset="150" data-aos-duration="500" class="description">
+            Nieustannie podnoszę swoje kwalifikacje, aby wspierać i pomagać najlepiej jak potrafię, uczestnicząc w
+            kolejnych szkoleniach, spotkaniach i webinarach, a swoją pracę poddaję regularnej superwizji.
+          </p>
+          <p data-aos="fade-up" data-aos-once="true" data-aos-offset="150" data-aos-duration="500" class="description">
+            W gabinecie współpracuję z dziećmi, młodzieżą oraz młodymi dorosłymi.
+          </p>
+          <p data-aos="fade-up" data-aos-once="true" data-aos-offset="150" data-aos-duration="500" class="description">
+            Od zawsze człowiek był dla mnie skarbnicą, składającą się z ogromnej ilości emocji, przeżyć, doświadczeń,
+            które starałam się zrozumieć, zamiast oceniać. Ktoś kiedyś powiedział, że kiedy pozwolimy człowiekowi być
+            sobą, zaczyna dziać się magia - w pełni się z tym zgadzam i kieruje się tym, zarówno w życiu, jak i pracy.
+          </p>
+          <p data-aos="fade-up" data-aos-once="true" data-aos-offset="150" data-aos-duration="500" class="description">
+            Pomoc drugiemu człowiekowi była dla mnie ważna odkąd pamiętam, a zawód psychologa jest spełnieniem jednego
+            z moich marzeń. Studia, szkolenia i kursy natomiast dają mi narzędzia, abym mogła wspierać i pomagać oraz
+            robić to efektywnie.
+          </p>
+          <p data-aos="fade-up" data-aos-once="true" data-aos-offset="150" data-aos-duration="500" class="description">
+            W relacji zarówno z dzieckiem, rodzicem, jak i osobą dorosłą przede wszystkim kieruje się dobrem klienta,
+            ważna jest dla mnie atmosfera bezpieczeństwa, otwartości i uważności.
+          </p>
+          <p data-aos="fade-up" data-aos-once="true" data-aos-offset="150" data-aos-duration="500" class="description">
+            Prywatnie jestem miłośniczką długich rozmów, komedii romantycznych i polskich gór, mam fantastycznych
+            przyjaciół, mnóstwo energii do działania i sto pomysłów na minutę.
+          </p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer class="footer">
+    <div class="footer__copy">
+      <p class="footer__text">D&D - Bezpieczna Przystań.</p>
+    </div>
+    <ul class="footer__list">
+      <li><a href="#">Do góry</a></li>
+      <li><a href="/">Strona główna</a></li>
+      <li><a href="/uslugi">Nasze usługi</a></li>
+      <li><a href="/cennik">Cennik</a></li>
+      <li><a href="/polityka-prywatnosci">Polityka prywatności</a></li>
+    </ul>
+    <br />
+    <br />
+    <ul class="footer__company">
+      <li><strong>Dane firmy:</strong></li>
+      <li><strong>Nazwa:</strong> D&D Bezpieczna Przystań s.c. Dominika Szpila, Dominika Wąchadło</li>
+      <li><strong>Adres firmy:</strong> ul. Rejtana 20 41-300 Dąbrowa Górnicza</li>
+      <li><strong>NIP:</strong> 6292508842</li>
+      <li><strong>REGON:</strong> 526125562</li>
+    </ul>
+  </footer>
+</body>
+
 </html>

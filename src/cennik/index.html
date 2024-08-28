@@ -1,103 +1,71 @@
 <!DOCTYPE html>
 <html lang="pl">
-  <head>
-    <!-- META -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="google-site-verification" content="Svdl6t_Sje2On7p425w9pkTzyfzAnRhcyQOC19Gv4Ek" />
-    <meta
-      title="D&D Bezpieczna Przystań - Gabinet Psychologiczny"
-      content="D&D Bezpieczna Przystań - Gabinet Psychologiczny Dominika Jazowska i Dominika Wąchadło S.C."
-    />
-    <meta
-      name="description"
-      content="D&D Bezpieczna Przystań - Gabinet Psychologiczny - sekcja przedstawia cennik świadczonych usług."
-    />
-    <meta
-      name="keywords"
-      content="ddbezpiecznaprzystan,dd,bezpieczna,przystań,D&D,Bezpieczna,Przystań,doświadczony,psycholog,śląsk,Dąbrowa,Górnicza,Jaworzno,dla,dzieci,nastolatka,nastolatki,dorosłych,gabinet,psychologiczny,Dominika,Jazowska,Wąchadło,Rejtana 20,pomoc,psychologa,psychologiczna"
-    />
-    <meta property="og:locale" content="pl_PL" />
-    <meta property="og:site_name" content="D&D Bezpieczna Przystań" />
-    <meta property="og:title" content="Gabinet Psychologiczny D&D Bezpieczna Przystań - Cennik" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://www.ddbezpiecznaprzystan.pl/cennik" />
 
-    <!-- LINK -->
-    <link rel="icon" type="image/png" sizes="16x16" href="../static/assets/favicon.png" />
-    <link rel="canonical" href="https://ddbezpiecznaprzystan.pl/cennik" />
-    <link rel="dns-prefetch" href="//cdnjs.cloudflare.com" />
-    <link rel="dns-prefetch" href="//unpkg.com" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <link rel="stylesheet" href="../styles.scss" />
+<head>
+  <!-- META -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="google-site-verification" content="Svdl6t_Sje2On7p425w9pkTzyfzAnRhcyQOC19Gv4Ek" />
+  <meta title="D&D Bezpieczna Przystań - Gabinet Psychologiczny"
+    content="D&D Bezpieczna Przystań - Gabinet Psychologiczny Dominika Szpila i Dominika Wąchadło S.C." />
+  <meta name="description"
+    content="D&D Bezpieczna Przystań - Gabinet Psychologiczny - sekcja przedstawia cennik świadczonych usług." />
+  <meta name="keywords"
+    content="ddbezpiecznaprzystan,dd,bezpieczna,przystań,D&D,Bezpieczna,Przystań,doświadczony,psycholog,śląsk,Dąbrowa,Górnicza,Jaworzno,dla,dzieci,nastolatka,nastolatki,dorosłych,gabinet,psychologiczny,Dominika,Szpila,Wąchadło,Rejtana 20,pomoc,psychologa,psychologiczna" />
+  <meta property="og:locale" content="pl_PL" />
+  <meta property="og:site_name" content="D&D Bezpieczna Przystań" />
+  <meta property="og:title" content="Gabinet Psychologiczny D&D Bezpieczna Przystań - Cennik" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.ddbezpiecznaprzystan.pl/cennik" />
 
-    <!-- SCRIPT -->
-    <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script
-      defer
-      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"
-      integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script defer type="module" src="../index.ts"></script>
-    <title>Gabinet Psychologiczny D&D Bezpieczna Przystań - Cennik</title>
-  </head>
-  <body>
-    <nav class="nav">
-      <div class="nav__toggle">
-        <i id="bars" class="fa-solid fa-bars"></i>
-        <i id="xmark" class="fa-solid fa-xmark hidden"></i>
-      </div>
-      <ul class="nav__list">
-        <li class="nav__item">
-          <a
-            title="Strona główna D&D Bezpieczna Przystań - Gabinet Psychologiczny"
-            aria-label="Link do strony głównej D&D Bezpieczna Przystań - Gabinet Psychologiczny"
-            id="navitem-home"
-            href="/"
-            class="nav__link nav__link--color"
-            >Strona Główna</a
-          >
-        </li>
-        <li class="nav__item">
-          <a
-            title="Sekcja opisująca psycholożki D&D Bezpieczna Przystań - Gabinet Psychologiczny"
-            aria-label="Link do sekcji opisującej psycholożki D&D Bezpieczna Przystań - Gabinet Psychologiczny"
-            id="navitem-o-nas"
-            href="/o-nas"
-            class="nav__link"
-            >O nas</a
-          >
-        </li>
-        <li class="nav__item">
-          <a
-            title="Opis usług realizowanych przez D&D Bezpieczna Przystań - Gabinet Psychologiczny"
-            aria-label="Link do opisu usług realizowanych przez D&D Bezpieczna Przystań - Gabinet Psychologiczny"
-            id="navitem-uslugi"
-            href="/uslugi"
-            class="nav__link"
-            >Nasze usługi</a
-          >
-        </li>
-        <li class="nav__item">
-          <a
-            title="Cennik usług realizowanych przez D&D Bezpieczna Przystań - Gabinet Psychologiczny"
-            aria-label="Link do cennika usług realizowanych przez D&D Bezpieczna Przystań - Gabinet Psychologiczny"
-            id="navitem-cennik"
-            href="#"
-            class="nav__link current-tab"
-            >Cennik</a
-          >
-        </li>
-        <!--         <li class="nav__item">
+  <!-- LINK -->
+  <link rel="icon" type="image/png" sizes="16x16" href="../static/assets/favicon.png" />
+  <link rel="canonical" href="https://ddbezpiecznaprzystan.pl/cennik" />
+  <link rel="dns-prefetch" href="//cdnjs.cloudflare.com" />
+  <link rel="dns-prefetch" href="//unpkg.com" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles.scss" />
+
+  <!-- SCRIPT -->
+  <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"
+    integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script defer type="module" src="../index.ts"></script>
+  <title>Gabinet Psychologiczny D&D Bezpieczna Przystań - Cennik</title>
+</head>
+
+<body>
+  <nav class="nav">
+    <div class="nav__toggle">
+      <i id="bars" class="fa-solid fa-bars"></i>
+      <i id="xmark" class="fa-solid fa-xmark hidden"></i>
+    </div>
+    <ul class="nav__list">
+      <li class="nav__item">
+        <a title="Strona główna D&D Bezpieczna Przystań - Gabinet Psychologiczny"
+          aria-label="Link do strony głównej D&D Bezpieczna Przystań - Gabinet Psychologiczny" id="navitem-home"
+          href="/" class="nav__link nav__link--color">Strona Główna</a>
+      </li>
+      <li class="nav__item">
+        <a title="Sekcja opisująca psycholożki D&D Bezpieczna Przystań - Gabinet Psychologiczny"
+          aria-label="Link do sekcji opisującej psycholożki D&D Bezpieczna Przystań - Gabinet Psychologiczny"
+          id="navitem-o-nas" href="/o-nas" class="nav__link">O nas</a>
+      </li>
+      <li class="nav__item">
+        <a title="Opis usług realizowanych przez D&D Bezpieczna Przystań - Gabinet Psychologiczny"
+          aria-label="Link do opisu usług realizowanych przez D&D Bezpieczna Przystań - Gabinet Psychologiczny"
+          id="navitem-uslugi" href="/uslugi" class="nav__link">Nasze usługi</a>
+      </li>
+      <li class="nav__item">
+        <a title="Cennik usług realizowanych przez D&D Bezpieczna Przystań - Gabinet Psychologiczny"
+          aria-label="Link do cennika usług realizowanych przez D&D Bezpieczna Przystań - Gabinet Psychologiczny"
+          id="navitem-cennik" href="#" class="nav__link current-tab">Cennik</a>
+      </li>
+      <!--         <li class="nav__item">
           <a
             title="Opinie o D&D Bezpieczna Przystań - Gabinet Psychologiczny"
             aria-label="Link do opinii o D&D Bezpieczna Przystań - Gabinet Psychologiczny"
@@ -107,125 +75,91 @@
             >Opinie</a
           >
         </li> -->
-        <li class="nav__item">
-          <a
-            title="Kontakt z D&D Bezpieczna Przystań - Gabinet Psychologiczny"
-            aria-label="Link do kontaktu z D&D Bezpieczna Przystań - Gabinet Psychologiczny"
-            id="navitem-contact"
-            href="/#contact"
-            class="nav__link"
-            >Kontakt</a
-          >
-        </li>
-        <li class="nav__item">
-          <div class="nav__item--socials">
-            <a
-              href="https://instagram.com/dd.bezpiecznaprzystan"
-              target="_blank"
-              id="nav-instagram"
-              class="nav__link"
-              title="Profil D&D Bezpieczna Przystań - Gabinet Psychologiczny w serwisie Instagram"
-              aria-label="Link do profilu D&D Bezpieczna Przystań - Gabinet Psychologiczny w serwisie Instagram"
-              ><i class="fa-brands fa-instagram"></i
-            ></a>
-            <a
-              href="https://www.facebook.com/profile.php?id=61550618512601"
-              target="_blank"
-              id="nav-facebook"
-              class="nav__link"
-              title="Profil D&D Bezpieczna Przystań - Gabinet Psychologiczny w serwisie Facebook"
-              aria-label="Link do profilu D&D Bezpieczna Przystań - Gabinet Psychologiczny w serwisie Facebook"
-              ><i class="fa-brands fa-facebook"></i
-            ></a>
-          </div>
-        </li>
-      </ul>
-    </nav>
-
-    <div id="mainContainer" class="mainContainer">
-      <section id="pricing" class="mainsection pricing">
-        <h1 data-aos="fade-down" data-aos-once="true" data-aos-offset="150" data-aos-duration="500">Cennik</h1>
-        <div
-          data-aos="fade-down"
-          data-aos-once="true"
-          data-aos-offset="150"
-          data-aos-duration="500"
-          class="mainsection__block__box"
-        >
-          <p class="description">
-            <strong>Terapia indywidualna</strong>
-            <strong class="thin">170zł/~50min</strong>
-          </p>
-          <p class="description">
-            <strong>Pierwsza konsultacja psychologiczna</strong>
-            <strong class="thin">200zł/~50min</strong>
-          </p>
-          <p class="description">
-            <strong>Zajęcia grupowe - Trening Umiejętności Społecznych (TUS)</strong>
-            <strong class="thin">100zł/~60min</strong>
-          </p>
-          <p class="description">
-            <strong>Zajęcia grupowe - Bajkoterapia</strong>
-            <strong class="thin">80zł/~60min</strong>
-          </p>
-          <p class="description">
-            <strong>Zajęcia grupowe - Zajęcia Wspierające Rozwój Emocjonalny</strong>
-            <strong class="thin">100zł/~60min</strong>
-          </p>
+      <li class="nav__item">
+        <a title="Kontakt z D&D Bezpieczna Przystań - Gabinet Psychologiczny"
+          aria-label="Link do kontaktu z D&D Bezpieczna Przystań - Gabinet Psychologiczny" id="navitem-contact"
+          href="/#contact" class="nav__link">Kontakt</a>
+      </li>
+      <li class="nav__item">
+        <div class="nav__item--socials">
+          <a href="https://instagram.com/dd.bezpiecznaprzystan" target="_blank" id="nav-instagram" class="nav__link"
+            title="Profil D&D Bezpieczna Przystań - Gabinet Psychologiczny w serwisie Instagram"
+            aria-label="Link do profilu D&D Bezpieczna Przystań - Gabinet Psychologiczny w serwisie Instagram"><i
+              class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.facebook.com/profile.php?id=61550618512601" target="_blank" id="nav-facebook"
+            class="nav__link" title="Profil D&D Bezpieczna Przystań - Gabinet Psychologiczny w serwisie Facebook"
+            aria-label="Link do profilu D&D Bezpieczna Przystań - Gabinet Psychologiczny w serwisie Facebook"><i
+              class="fa-brands fa-facebook"></i></a>
         </div>
-        <h1 data-aos="fade-in" data-aos-once="true" data-aos-duration="500">Zapraszamy!</h1>
-        <div data-aos="zoom-in" data-aos-once="true" data-aos-duration="500" class="img-placeholder">
-          <picture>
-            <source
-              width="100%"
-              height="100%"
-              media="(max-width:600px)"
-              srcset="../static/assets/domcie-misie-mob.jpg?as=webp"
-              alt="Psycholog Dominika Jazowska i Dominika Wąchadło przytulają pluszowe misie"
-              loading="lazy"
-              type="image/webp"
-            />
-            <source
-              width="100%"
-              height="100%"
-              media="(min-width:601px)"
-              srcset="../static/assets/domcie-misie.jpg?as=webp"
-              alt="Psycholog Dominika Jazowska i Dominika Wąchadło przytulają pluszowe misie"
-              loading="lazy"
-              type="image/webp"
-            />
-            <img
-              width="100%"
-              height="100%"
-              src="../static/assets/domcie-misie.jpg?as=webp"
-              alt="Psycholog Dominika Jazowska i Dominika Wąchadło przytulają pluszowe misie"
-              loading="lazy"
-            />
-          </picture>
-        </div>
-      </section>
-    </div>
+      </li>
+    </ul>
+  </nav>
 
-    <footer class="footer">
-      <div class="footer__copy">
-        <p class="footer__text">D&D - Bezpieczna Przystań.</p>
+  <div id="mainContainer" class="mainContainer">
+    <section id="pricing" class="mainsection pricing">
+      <h1 data-aos="fade-down" data-aos-once="true" data-aos-offset="150" data-aos-duration="500">Cennik</h1>
+      <div data-aos="fade-down" data-aos-once="true" data-aos-offset="150" data-aos-duration="500"
+        class="mainsection__block__box">
+        <p class="description">
+          <strong>Terapia indywidualna</strong>
+          <strong class="thin">170zł/~50min</strong>
+        </p>
+        <p class="description">
+          <strong>Pierwsza konsultacja psychologiczna</strong>
+          <strong class="thin">200zł/~50min</strong>
+        </p>
+        <p class="description">
+          <strong>Zajęcia grupowe - Trening Umiejętności Społecznych (TUS)</strong>
+          <strong class="thin">100zł/~60min</strong>
+        </p>
+        <p class="description">
+          <strong>Zajęcia grupowe - Bajkoterapia</strong>
+          <strong class="thin">80zł/~60min</strong>
+        </p>
+        <p class="description">
+          <strong>Zajęcia grupowe - Zajęcia Wspierające Rozwój Emocjonalny</strong>
+          <strong class="thin">100zł/~60min</strong>
+        </p>
       </div>
-      <ul class="footer__list">
-        <li><a href="#">Do góry</a></li>
-        <li><a href="/">Strona główna</a></li>
-        <li><a href="/o-nas">O nas</a></li>
-        <li><a href="/uslugi">Nasze usługi</a></li>
-        <li><a href="/polityka-prywatnosci">Polityka prywatności</a></li>
-      </ul>
-      <br />
-      <br />
-      <ul class="footer__company">
-        <li><strong>Dane firmy:</strong></li>
-        <li><strong>Nazwa:</strong> D&D Bezpieczna Przystań s.c. Dominika Jazowska, Dominika Wąchadło</li>
-        <li><strong>Adres firmy:</strong> ul. Rejtana 20 41-300 Dąbrowa Górnicza</li>
-        <li><strong>NIP:</strong> 6292508842</li>
-        <li><strong>REGON:</strong> 526125562</li>
-      </ul>
-    </footer>
-  </body>
+      <h1 data-aos="fade-in" data-aos-once="true" data-aos-duration="500">Zapraszamy!</h1>
+      <div data-aos="zoom-in" data-aos-once="true" data-aos-duration="500" class="img-placeholder">
+        <picture>
+          <source width="100%" height="100%" media="(max-width:600px)"
+            srcset="../static/assets/domcie-misie-mob.jpg?as=webp"
+            alt="Psycholog Dominika Szpila i Dominika Wąchadło przytulają pluszowe misie" loading="lazy"
+            type="image/webp" />
+          <source width="100%" height="100%" media="(min-width:601px)"
+            srcset="../static/assets/domcie-misie.jpg?as=webp"
+            alt="Psycholog Dominika Szpila i Dominika Wąchadło przytulają pluszowe misie" loading="lazy"
+            type="image/webp" />
+          <img width="100%" height="100%" src="../static/assets/domcie-misie.jpg?as=webp"
+            alt="Psycholog Dominika Szpila i Dominika Wąchadło przytulają pluszowe misie" loading="lazy" />
+        </picture>
+      </div>
+    </section>
+  </div>
+
+  <footer class="footer">
+    <div class="footer__copy">
+      <p class="footer__text">D&D - Bezpieczna Przystań.</p>
+    </div>
+    <ul class="footer__list">
+      <li><a href="#">Do góry</a></li>
+      <li><a href="/">Strona główna</a></li>
+      <li><a href="/o-nas">O nas</a></li>
+      <li><a href="/uslugi">Nasze usługi</a></li>
+      <li><a href="/polityka-prywatnosci">Polityka prywatności</a></li>
+    </ul>
+    <br />
+    <br />
+    <ul class="footer__company">
+      <li><strong>Dane firmy:</strong></li>
+      <li><strong>Nazwa:</strong> D&D Bezpieczna Przystań s.c. Dominika Szpila, Dominika Wąchadło</li>
+      <li><strong>Adres firmy:</strong> ul. Rejtana 20 41-300 Dąbrowa Górnicza</li>
+      <li><strong>NIP:</strong> 6292508842</li>
+      <li><strong>REGON:</strong> 526125562</li>
+    </ul>
+  </footer>
+</body>
+
 </html>
